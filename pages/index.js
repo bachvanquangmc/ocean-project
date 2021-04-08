@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import HiddenMenu from '../comps/HiddenMenu'
 import MenuBar from '../comps/MenuBar'
 import Category from '../comps/CategoryUI'
+import AppName from '../comps/AppNameUI'
 
 const Home = styled.div`
     width: 100vw;
@@ -22,6 +23,7 @@ export default function HomeBody() {
             <MenuBar barText='Protection'></MenuBar>
             <HiddenMenu></HiddenMenu>
   
+            <AppName text="Edu-Ocean"></AppName>
             <Category CatName="Importance" text="Ocean is so important to us" direction="right"/>
             <Category CatName="Threats" text="To the ocean" direction="left"/>
             <Category CatName="Protection" text="Things we can do to save the ocean" direction="right" />
