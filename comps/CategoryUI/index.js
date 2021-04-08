@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const CatDiv = styled.div`
-    background:rgba(0, 100, 255, 0.2);
+    background:rgba(0, 128, 255, 0.2);
     height:90px;
     width:100%;
     margin-top:10px;
@@ -28,7 +28,7 @@ const CatH1 = styled.h1`
 `;
 
 const CatP = styled.p`
-
+    margin-bottom:23px;
 `;
 
 const Category = ({
