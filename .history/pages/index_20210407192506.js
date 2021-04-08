@@ -9,7 +9,7 @@ const Home = styled.div`
 
 export default function HomeBody() {
   return<Home>
-          {/* comps go here */}
+          {/* components go here */}
 
     </Home>
 }

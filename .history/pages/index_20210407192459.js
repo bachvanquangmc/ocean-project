@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-// import your comps here
+// 
 
 const Home = styled.div`
     width: 100vw;
@@ -9,7 +9,7 @@ const Home = styled.div`
 
 export default function HomeBody() {
   return<Home>
-          {/* comps go here */}
+          {/* components go here */}
 
     </Home>
 }

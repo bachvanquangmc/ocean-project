@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-// import your comps here
 
 const Home = styled.div`
     width: 100vw;
@@ -9,7 +8,8 @@ const Home = styled.div`
 
 export default function HomeBody() {
   return<Home>
-          {/* comps go here */}
-
+          <WarrenCard tiltle='Warren' spanText='This is a good card' buttonText='Dont Click' />
+          <Course bgcolor="#F8B9B9" />
+          <Comp1/>
     </Home>
 }
