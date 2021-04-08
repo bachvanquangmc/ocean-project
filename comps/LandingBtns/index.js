@@ -22,13 +22,12 @@ const Button = styled.button`
     color: white;
     background: ${props=>props.btncolor};
     cursor: pointer;
+    }
 `;
 
 const BtnLink = styled.a`
     text-decoration none;
 `;
-
-
 
 const LandingBtns = ({
     startbtn="#20BEAD",

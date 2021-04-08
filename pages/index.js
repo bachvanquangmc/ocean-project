@@ -4,6 +4,8 @@ import HiddenMenu from '../comps/HiddenMenu'
 import MenuBar from '../comps/MenuBar'
 import Category from '../comps/CategoryUI'
 import AppName from '../comps/AppNameUI'
+import LandingBtns from '../comps/LandingBtns'
+import About from '../comps/AboutPageUI'
 
 const Home = styled.div`
     width: 100vw;
@@ -27,6 +29,9 @@ export default function HomeBody() {
             <Category CatName="Importance" text="Ocean is so important to us" direction="right"/>
             <Category CatName="Threats" text="To the ocean" direction="left"/>
             <Category CatName="Protection" text="Things we can do to save the ocean" direction="right" />
+
+            <LandingBtns/>
+            <About/>
 
     </Home>
 }
