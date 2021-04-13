@@ -1,21 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
+import MenuBar from '../MenuBar'
 
 const MenuWraper = styled.div`
-    background: #0B4E8A;
     display: flex;
+    flex-direction: column;
     top: 0px;
     width: 280px;
-    height: 100px;
-    margin-bottom: 3px;
-    background-color: rgba(11, 78, 138);
-    z-index: 2;
+    height: 500px;
+    padding: 80px 0 80px 0;
+    background-color: rgba(11, 78, 138, 0.5);
 `
 
 
 
 const HiddenMenu = () => {
     return <MenuWraper>
+        <MenuBar barText='Home'></MenuBar>
+        <MenuBar barText='Importance'></MenuBar>
+        <MenuBar barText='Threats'></MenuBar>
+        <MenuBar barText='Protection'></MenuBar>
     </MenuWraper>
 } 
 

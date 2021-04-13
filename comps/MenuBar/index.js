@@ -5,7 +5,7 @@ const MenuBarWraper = styled.div`
     height: 80px;
     width: 280px;
     background: rgba(11, 78, 138, 0.85);
-    margin: 0px 0 3px 0;
+    margin: 0px 0 5px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
