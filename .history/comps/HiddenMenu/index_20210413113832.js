@@ -14,7 +14,7 @@ const MenuWraper = styled.div`
     background-color: #0B4E8A;
     position: relative;
     left: ${props => props.left}px;
-    transition: 300ms;
+
 `
 
 const MenuIconDiv = styled.div`
@@ -22,7 +22,6 @@ const MenuIconDiv = styled.div`
     height: 40px;
     margin: 3px;
     position: absolute;
-    z-index: 1;
 
 `
 
@@ -37,7 +36,7 @@ const HiddenMenu = ({
     }
 
     return <div>
-        <MenuIconDiv onClick={menuHandle}>
+        <MenuIconDiv onClick={}>
             <img src='menubar.png' width='40px' height='40px' />
         </MenuIconDiv>
         <MenuWraper left={menu ? 0 : -300} >

@@ -14,7 +14,7 @@ const MenuWraper = styled.div`
     background-color: #0B4E8A;
     position: relative;
     left: ${props => props.left}px;
-    transition: 300ms;
+
 `
 
 const MenuIconDiv = styled.div`
@@ -22,7 +22,7 @@ const MenuIconDiv = styled.div`
     height: 40px;
     margin: 3px;
     position: absolute;
-    z-index: 1;
+    index:1;
 
 `
 
