@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const MenuBarWraper = styled.div`
     height: 80px;
-    max-width: 500px;
+    max-width: 280px;
     background: rgba(255, 255, 255, 0.2);
     margin: 0px 0 5px 0;
     display: flex;

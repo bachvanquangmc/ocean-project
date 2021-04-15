@@ -8,8 +8,8 @@ const MenuWraper = styled.div`
     display: flex;
     flex-direction: column;
     top: 0px;
-    max-width: 500px;
-    max-height: 830px;
+    max-width: 280px;
+    height: 500px;
     padding: 80px 0 80px 0;
     background-color: #0B4E8A;
     position: relative;
@@ -27,7 +27,7 @@ const MenuIconDiv = styled.div`
 `
 
 const HiddenMenu = ({
-    left='-500'
+    left='-300'
 }) => {
     const [menu, setMenu] = useState(false)
 
@@ -40,7 +40,7 @@ const HiddenMenu = ({
         <MenuIconDiv onClick={menuHandle}>
             <img src='menubar.png' width='40px' height='40px' />
         </MenuIconDiv>
-        <MenuWraper left={menu ? 0 : -500} >
+        <MenuWraper left={menu ? 0 : -300} >
             <MenuBar barText='Home'></MenuBar>
             <MenuBar barText='Importance'></MenuBar>
             <MenuBar barText='Threats'></MenuBar>

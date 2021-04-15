@@ -9,7 +9,7 @@ const MenuWraper = styled.div`
     flex-direction: column;
     top: 0px;
     max-width: 500px;
-    max-height: 830px;
+    max-height: 500px;
     padding: 80px 0 80px 0;
     background-color: #0B4E8A;
     position: relative;
