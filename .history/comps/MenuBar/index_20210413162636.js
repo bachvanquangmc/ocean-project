@@ -20,7 +20,7 @@ const MenuText = styled.h1`
 
 const MenuBar = ({
     barText = 'Home'
-
+    router = './'
 }) => {
     return <MenuBarWraper>
             <MenuText>{barText}</MenuText>

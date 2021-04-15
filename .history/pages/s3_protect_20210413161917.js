@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 // import your comps here
 import HiddenMenu from '../comps/HiddenMenu'
+import MenuBar from '../comps/MenuBar'
 import Category from '../comps/CategoryUI'
 
 const Home = styled.div`
-    max-width: 500px;
+    width: 100vw;
     heigh: 100vh;
     display: flex;
     flex-direction: column;

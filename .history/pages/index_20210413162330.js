@@ -4,7 +4,7 @@ import HiddenMenu from '../comps/HiddenMenu'
 import Category from '../comps/CategoryUI'
 
 const Home = styled.div`
-    max-width: 500px;
+    max-width: 100vw;
     heigh: 100vh;
     display: flex;
     flex-direction: column;
