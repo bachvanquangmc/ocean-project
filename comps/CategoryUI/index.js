@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const CatDiv = styled.div`
     background:rgba(0, 128, 255, 0.2);
     height:90px;
-    width:100%;
+    max-width:500px;
     margin-top:10px;
     display:flex;
     flex-direction:column;
