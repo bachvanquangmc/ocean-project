@@ -2,9 +2,7 @@ import styled from 'styled-components'
 // import your comps here
 import HiddenMenu from '../comps/HiddenMenu'
 import Category from '../comps/CategoryUI'
-import AppName from '../comps/AppNameUI'
-import LandingBtns from '../comps/LandingBtns'
-import About from '../comps/AboutPageUI'
+
 
 const Home = styled.div`
     max-width: 500px;
