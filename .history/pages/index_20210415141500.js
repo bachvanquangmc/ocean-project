@@ -7,7 +7,7 @@ import LandingBtns from '../comps/LandingBtns'
 import About from '../comps/AboutPageUI'
 
 import S3text from '../comps/S3textUI'
-import S3image from '../comps/S3image'
+import S3image from '../comps/S'
 
 
 
@@ -38,7 +38,6 @@ export default function HomeBody() {
             <About/>
 
             <S3text></S3text>
-            <S3image></S3image>
 
     </Home>
 }

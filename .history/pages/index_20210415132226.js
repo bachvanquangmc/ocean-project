@@ -5,10 +5,7 @@ import Category from '../comps/CategoryUI'
 import AppName from '../comps/AppNameUI'
 import LandingBtns from '../comps/LandingBtns'
 import About from '../comps/AboutPageUI'
-
 import S3text from '../comps/S3textUI'
-import S3image from '../comps/S3image'
-
 
 
 
@@ -19,9 +16,8 @@ const Home = styled.div`
     flex-direction: column;
     background-color: #333;
     background-image: url(ocean_background_home.svg);
-    background-size: cover;
+    background-size: border-box;
     background-repeat: no-repeat;
-    background-position: center;
 `
 
 export default function HomeBody() {
@@ -38,7 +34,6 @@ export default function HomeBody() {
             <About/>
 
             <S3text></S3text>
-            <S3image></S3image>
 
     </Home>
 }

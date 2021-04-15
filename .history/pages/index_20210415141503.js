@@ -38,7 +38,6 @@ export default function HomeBody() {
             <About/>
 
             <S3text></S3text>
-            <S3image></S3image>
 
     </Home>
 }
