@@ -14,6 +14,7 @@ import S3image from '../comps/S3image'
 
 
 const Home = styled.div`
+<<<<<<< HEAD
     max-width: 500px;
     heigh: 100vh;
     display: flex;
@@ -24,13 +25,25 @@ const Home = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     overflow-y: scroll;
+
+  
+>>>>>>> main
 `
 
 export default function HomeBody() {
   return<Home>
           {/* comps go here */}
             <HiddenMenu></HiddenMenu>
-
+<<<<<<< HEAD
+  
+=======
+            <MenuBar></MenuBar>
+            <MenuBar barText='Importance'></MenuBar>
+            <MenuBar barText='Threats'></MenuBar>
+            <MenuBar barText='Protection'></MenuBar>
+            <HiddenMenu></HiddenMenu>
+            
+>>>>>>> main
             <AppName text="Edu-Ocean"></AppName>
             <Category CatName="Importance" text="Ocean is so important to us" direction="right"/>
             <Category CatName="Threats" text="To the ocean" direction="left"/>
@@ -39,15 +52,20 @@ export default function HomeBody() {
             <LandingBtns/>
             <About/>
 
+<<<<<<< HEAD
             <S3text></S3text>
             <S3image></S3image>
-
+=======
             <PageLayout FTitle="Threats" FDiscription="to the Ocean" BackgroundImg="/ocean_background.svg"></PageLayout>
             <PageLayout FTitle="Hi" STitle="Hello" FDiscription="asds" SDiscription="asdasd" BackgroundImg="/marinelife.svg"></PageLayout>
             <PageLayout FTitle="Climate Change" STitle="Warmer and Acidity" FDiscription="impacts ocean temperature and acidity" SDiscription="Higher temperature and acidity make marine life harder" BackgroundImg="" ImgSource="/phytoplankton_less.svg"></PageLayout>
             <PageLayout FTitle="Five Trillion" STitle="Plastic" FDiscription="pieces of plastic pollution are afloat in the oceans" SDiscription="has been found in the ocean as deep as 11km" BackgroundImg="plastic-01.svg"></PageLayout>
             <PageLayout FTitle="Overfishing" STitle="1/3" SDiscription="of global fish stocks are overfished" BackgroundImg="overfishing-01.svg"></PageLayout>
             <PageLayout STitle="Waste Pollution from Ships" SDiscription="Apart from other pollutants such as oil and gas, the waste and garbage generated on board ships poses a significant threat to the marine ecosystem" BackgroundImg="ocean_threats.jpg" ImgSource="fishing_boat1.svg"></PageLayout>
+
+
+
+>>>>>>> main
 
     </Home>
 }
