@@ -1,15 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ParaInput = styled.p`
-    color:#D3D3D3;   
-    text-align: center;
-    margin:10px;
+const ParaCont = styled.div`
 `;
 
-const Para = () => {
+const Para1 = styled.p`
+    color:#ffffff;   
+    text-align: center;
+    margin:10px;
+    text-shadow: 1px 1px 1px black;
+`;
 
-    return <ParaInput>The ocean is so important to us.</ParaInput>
+const Para = ({
+    Body = "Body text",
+}) => {
+
+    return <ParaCont>
+    <Para1>{Body}</Para1>
+    </ParaCont>
 }
 
 export default Para;
