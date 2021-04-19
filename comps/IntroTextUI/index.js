@@ -9,9 +9,7 @@ const ParaInput = styled.p`
 
 const Para = () => {
 
-    return <div>
-        <ParaInput>Body Text</ParaInput>
-    </div>
+    return <ParaInput>The ocean is so important to us.</ParaInput>
 }
 
 export default Para;
