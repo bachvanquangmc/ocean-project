@@ -12,7 +12,6 @@ const TextCont = styled.div`
 const ImpCont = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: #333;
     background-image: url(ocean_background.svg);
     background-size: cover;
     background-repeat: no-repeat;
