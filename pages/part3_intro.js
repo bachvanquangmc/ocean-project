@@ -3,6 +3,12 @@ import IntroTextUI from '../comps/IntroTextUI';
 import styled from 'styled-components';
 import HiddenMenu from '../comps/HiddenMenu'
 
+const TextCont = styled.div`
+    position:relative;
+    margin:5px;
+    bottom:250px;
+`;
+
 const ImpCont = styled.div`
     display: flex;
     height:100vh;
@@ -12,13 +18,6 @@ const ImpCont = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     overflow-y: scroll;
-`;
-
-const TextCont = styled.div`
-    position:relative;
-    margin:5px;
-    bottom:250px;
-
 `;
 
 export default function Protect () {
