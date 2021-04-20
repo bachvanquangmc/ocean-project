@@ -30,7 +30,7 @@ export default function Threat () {
             Title = "Threats"
         />
         <IntroTextUI
-            Body = "to the ocean"
+            Body = "To the ocean"
         /> 
         </TextCont> 
 
