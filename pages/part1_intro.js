@@ -7,7 +7,6 @@ const TextCont = styled.div`
     position:relative;
     margin:5px;
     bottom:250px;
-
 `;
 
 const ImpCont = styled.div`
@@ -31,7 +30,7 @@ export default function Imp () {
             Title = "Importance"
         />
         <IntroTextUI
-            Body = "the ocean is so important to us."
+            Body = "The ocean is so important to us."
         /> 
         </TextCont>
 
