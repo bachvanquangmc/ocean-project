@@ -7,11 +7,11 @@ const TextCont = styled.div`
     position:relative;
     margin:5px;
     bottom:250px;
-
 `;
 
 const ImpCont = styled.div`
     display: flex;
+    height:100vh;
     flex-direction: column;
     background-image: url(ocean_background.svg);
     background-size: cover;
@@ -30,7 +30,7 @@ export default function Imp () {
             Title = "Importance"
         />
         <IntroTextUI
-            Body = "the ocean is so important to us."
+            Body = "The ocean is so important to us."
         /> 
         </TextCont>
 

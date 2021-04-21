@@ -15,7 +15,7 @@ import S3image from '../comps/S3image'
 
 const Home = styled.div`
     max-width: 500px;
-    heigh: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #333;
