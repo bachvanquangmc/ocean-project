@@ -4,10 +4,10 @@ import styled from 'styled-components'
 const QizWrapper = styled.div `
     height: 150px;
     width: 90vw;
-    margin-top: 15px;
+    margin-top: 10px;
     background: rgba(255, 255, 255, 0.2);
     border: rgba(255, 255, 255, 0.5) ${props=> props.borderSize}px solid;
-    border-radius: 10px;
+    border-radius: 15px;
     display: inline-flex;
     align-items: center;
     color: #FFF;

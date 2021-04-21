@@ -51,6 +51,12 @@ export default function S3page() {
             <S3Conten>
                 <QizUI callBack={process}/>
                 <QizUIr callBack={process} />
+                <QizUI callBack={process}/>
+                <QizUIr callBack={process} />
+                <QizUI callBack={process}/>
+                <QizUIr callBack={process} />
+                <QizUI callBack={process}/>
+                <QizUIr callBack={process} />
                 <InputBtn />
             </S3Conten>
 

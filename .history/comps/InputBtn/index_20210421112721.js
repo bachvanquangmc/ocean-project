@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import styled from 'styled-components'
 
 
-const IpBtnWrap = styled.button `
+const IpBtnWrap = styled.div `
     height: 70px;
     width: 90vw;
     margin-top: 15px;
@@ -18,13 +18,16 @@ const InputBtn = ({
     value = 'Submit'
 }) =>
 {
-    
+    const [submit, setSubmit] = useState('Submit')
+
     const submitHandle = () =>
     {
+        setSubmit('Submitted')
         console.log(value)
     }
 
-    return<IpBtnWrap onClick={submitHandle} value={value}>Submit</IpBtnWrap>
+
+    return<IpBtnWrap onClick={submitHandle} value={submit ? 'Submitted' : 'Submit'}>Submit</IpBtnWrap>
 
 }
 

@@ -7,7 +7,7 @@ const QizWrapper = styled.div `
     margin-top: 15px;
     background: rgba(255, 255, 255, 0.2);
     border: rgba(255, 255, 255, 0.5) ${props=> props.borderSize}px solid;
-    border-radius: 10px;
+    border-radius: 15px;
     display: inline-flex;
     align-items: center;
     color: #FFF;

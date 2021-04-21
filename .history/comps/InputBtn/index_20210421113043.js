@@ -15,14 +15,17 @@ const IpBtnWrap = styled.button `
 
 
 const InputBtn = ({
-    value = 'Submit'
+    
 }) =>
 {
-    
+    const [submit, setSubmit] = useState('Submit')
+
     const submitHandle = () =>
     {
+        // setSubmit('Submitted')
         console.log(value)
     }
+
 
     return<IpBtnWrap onClick={submitHandle} value={value}>Submit</IpBtnWrap>
 

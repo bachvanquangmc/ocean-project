@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const QizWrapper = styled.div `
     height: 150px;
     width: 90vw;
-    margin-top: 15px;
+    margin-top: 10px;
     background: rgba(255, 255, 255, 0.2);
     border: rgba(255, 255, 255, 0.5) ${props=> props.borderSize}px solid;
     border-radius: 10px;
@@ -38,7 +38,7 @@ const QizText = styled.p `
 
 `
 
-const QizUI = ({
+const QizUIr = ({
     imgSrc = 'car.svg',
     qizTitle = 'Question 1',
     qizText = 'This is first question',
@@ -66,12 +66,12 @@ const QizUI = ({
     
     
     return <QizWrapper onClick={borderHandle} borderSize={border ? '2' : '0'} >
-        <QizImg src={imgSrc} />
         <QizInfo>
             <QizTitle>{qizTitle}</QizTitle>
             <QizText>{qizText}</QizText>
         </QizInfo>
+        <QizImg src={imgSrc} />
     </QizWrapper>
 }
 
-export default QizUI
+export default QizUIr

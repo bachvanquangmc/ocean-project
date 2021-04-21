@@ -7,7 +7,7 @@ const QizWrapper = styled.div `
     margin-top: 15px;
     background: rgba(255, 255, 255, 0.2);
     border: rgba(255, 255, 255, 0.5) ${props=> props.borderSize}px solid;
-    border-radius: 10px;
+    border-radius: 15px;
     display: inline-flex;
     align-items: center;
     color: #FFF;
@@ -38,7 +38,7 @@ const QizText = styled.p `
 
 `
 
-const QizUI = ({
+const QizUIr = ({
     imgSrc = 'car.svg',
     qizTitle = 'Question 1',
     qizText = 'This is first question',
@@ -66,12 +66,12 @@ const QizUI = ({
     
     
     return <QizWrapper onClick={borderHandle} borderSize={border ? '2' : '0'} >
-        <QizImg src={imgSrc} />
         <QizInfo>
             <QizTitle>{qizTitle}</QizTitle>
             <QizText>{qizText}</QizText>
         </QizInfo>
+        <QizImg src={imgSrc} />
     </QizWrapper>
 }
 
-export default QizUI
+export default QizUIr

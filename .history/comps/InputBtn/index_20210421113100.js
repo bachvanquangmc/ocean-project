@@ -24,6 +24,7 @@ const InputBtn = ({
         console.log(value)
     }
 
+
     return<IpBtnWrap onClick={submitHandle} value={value}>Submit</IpBtnWrap>
 
 }
