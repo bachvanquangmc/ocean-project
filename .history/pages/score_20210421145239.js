@@ -23,36 +23,21 @@ const S3Conten = styled.div `
     align-items: center;
 `
 
-export default function S3page() {
+export default function S3page({
+    score = 100
+}) {
 
-    var score = 0
-    const process =(value)=>
+    const score = () =>
     {
-        if(value == 1 )
-        {
-            score = score + 1
-        }
-        else if(value == -1 && score == 0)
-        {
-            score = 0
-        }
-        else if(value == -1 && score != 0)
-        {
-            score = score - 1
-        }
-        console.log(score)
+        localStorage.getItem()
     }
 
     return<S3Wraper>
                 <HiddenMenu />
             <S3Conten>
-                <S3text titleColor='yellow' textTitle='Hello' textBody='What a wonderful app'></S3text>
+                <S3text titleColor='yellow' textTitle='Your Score' textBody={score}></S3text>
             </S3Conten>
-            <S3Conten>
-                <QizUI callBack={process}/>
-                <QizUIr callBack={process} />
-                <InputBtn />
-            </S3Conten>
+
 
         </S3Wraper>
 }
