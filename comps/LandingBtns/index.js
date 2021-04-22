@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
+
 
 const ButtonContainer = styled.div`
     display:flex;
@@ -33,11 +35,12 @@ const LandingBtns = ({
     startbtn="#20BEAD",
     aboutbtn="#1995C9",
 }) =>{
+    const router = useRouter();
     return <ButtonContainer>        
-        <BtnLink href="https://www.figma.com/proto/FFMRAIgHnmdMigcNRi4h1g/sustainability-web-app?node-id=230%3A478&scaling=min-zoom" target="_blank">
+        <BtnLink onClick={()=>router.push("/categories")}>
             <Button btncolor={startbtn}>Start</Button>
         </BtnLink>
-        <BtnLink href="https://github.com/bachvanquangmc/ocean-project" target="_blank">
+        <BtnLink onClick={()=>router.push("/about")}>
             <Button btncolor={aboutbtn}>About</Button>
         </BtnLink>
     </ButtonContainer>
