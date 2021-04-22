@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-// import your comps here
 import HiddenMenu from '../comps/HiddenMenu'
 import Category from '../comps/CategoryUI'
 import AppName from '../comps/AppNameUI'
@@ -7,6 +6,8 @@ import AppName from '../comps/AppNameUI'
 const Home = styled.div`
     height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-color: #333;
     background-image: url(ocean_background_home.svg);
