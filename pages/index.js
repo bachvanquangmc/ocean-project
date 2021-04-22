@@ -1,62 +1,21 @@
 import styled from 'styled-components'
-// import your comps here
-import HiddenMenu from '../comps/HiddenMenu'
-import Category from '../comps/CategoryUI'
-import AppName from '../comps/AppNameUI'
 import LandingBtns from '../comps/LandingBtns'
-import About from '../comps/AboutPageUI'
-import PageLayout from '../comps/PageLayout'
+import Logo from '../comps/StartLogo'
+import IntroTitleUI from '../comps/IntroTitleUI';
 
-import S3text from '../comps/S3textUI'
-import S3image from '../comps/S3image'
-
-import ImpIntro from '../comps/Part1Intro'
-import ThreatIntro from '../comps/Part2Intro'
-import ProIntro from '../comps/Part3Intro'
-
-
-
-
-const Home = styled.div`
+const LandingPage = styled.div`
     max-width: 500px;
     height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    background-color: #333;
-    background-image: url(ocean_background_home.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow-y: scroll;
+    background: rgb(101,210,255);
+    background: linear-gradient(180deg, rgba(101,210,255,1) 0%, rgba(25,149,201,1) 37%, rgba(11,78,138,1) 100%);
 `
-
 export default function HomeBody() {
-  return<Home>
-          {/* comps go here */}
-            <HiddenMenu></HiddenMenu>
-
-            <AppName text="Edu-Ocean"></AppName>
-            <Category CatName="Importance" text="Ocean is so important to us" direction="right"/>
-            <Category CatName="Threats" text="To the ocean" direction="left"/>
-            <Category CatName="Protection" text="Things we can do to save the ocean" direction="right" />
-
-            <LandingBtns/>
-            <About/>
-
-            <ImpIntro/>
-
-            <S3text></S3text>
-            <S3image></S3image>
-
-            <ThreatIntro/>
-
-            <PageLayout FTitle="Threats" FDiscription="to the Ocean" BackgroundImg="/ocean_background.svg"></PageLayout>
-            <PageLayout FTitle="Hi" STitle="Hello" FDiscription="asds" SDiscription="asdasd" BackgroundImg="/marinelife.svg"></PageLayout>
-            <PageLayout FTitle="Climate Change" STitle="Warmer and Acidity" FDiscription="impacts ocean temperature and acidity" SDiscription="Higher temperature and acidity make marine life harder" BackgroundImg="" ImgSource="/phytoplankton_less.svg"></PageLayout>
-            <PageLayout FTitle="Five Trillion" STitle="Plastic" FDiscription="pieces of plastic pollution are afloat in the oceans" SDiscription="has been found in the ocean as deep as 11km" BackgroundImg="plastic-01.svg"></PageLayout>
-            <PageLayout FTitle="Overfishing" STitle="1/3" SDiscription="of global fish stocks are overfished" BackgroundImg="overfishing-01.svg"></PageLayout>
-            <PageLayout STitle="Waste Pollution from Ships" SDiscription="Apart from other pollutants such as oil and gas, the waste and garbage generated on board ships poses a significant threat to the marine ecosystem" BackgroundImg="ocean_threats.jpg" ImgSource="fishing_boat1.svg"></PageLayout>
- 
-            <ProIntro/>
-    </Home>
+  return<LandingPage>
+          <Logo></Logo>
+          <LandingBtns/>
+      </LandingPage>
 }
