@@ -7,7 +7,14 @@ import QizUI from '../comps/QizUI'
 import QizUIr from '../comps/QizUIr'
 import InputBtn from '../comps/InputBtn'
 
-import {S3Wraper, S3Content} from './style/style'
+import {S3Wraper} from './style/style'
+
+const S3Conten = styled.div `
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
 
 export default function S3page({
     Quiz1Score = 0
@@ -38,14 +45,14 @@ export default function S3page({
 
     return<S3Wraper>
                 <HiddenMenu />
-            <S3Content>
+            <S3Conten>
                 <S3text titleColor='yellow' textTitle='Hello' textBody='What a wonderful app'></S3text>
-            </S3Content>
-            <S3Content>
+            </S3Conten>
+            <S3Conten>
                 <QizUI callBack={process}/>
                 <QizUIr callBack={process} />
                 <InputBtn IptRouter={'/score1'}/>
-            </S3Content>
+            </S3Conten>
 
         </S3Wraper>
 }

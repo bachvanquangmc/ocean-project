@@ -9,8 +9,10 @@ import InputBtn from '../comps/InputBtn'
 
 import {S3Wraper, S3Content} from './style/style'
 
+
+
 export default function S3page({
-    Quiz1Score = 0
+    Quiz2Score = 0
 }) {
 
     var score = 0
@@ -28,10 +30,9 @@ export default function S3page({
         {
             score = score - 1
         }
-        Quiz1Score = score
+        Quiz2Score = score
 
-        localStorage.setItem('quiz1', score)
-        localStorage.setItem('quiz2', 0)
+        localStorage.setItem('quiz2', score)
         localStorage.setItem('quiz3', 0)
         
     }
@@ -40,12 +41,12 @@ export default function S3page({
                 <HiddenMenu />
             <S3Content>
                 <S3text titleColor='yellow' textTitle='Hello' textBody='What a wonderful app'></S3text>
-            </S3Content>
-            <S3Content>
+            </S3Conten>
+            <S3Conten>
                 <QizUI callBack={process}/>
                 <QizUIr callBack={process} />
-                <InputBtn IptRouter={'/score1'}/>
-            </S3Content>
+                <InputBtn IptRouter={'/score2'}/>
+            </S3Conten>
 
         </S3Wraper>
 }

@@ -7,7 +7,8 @@ import QizUI from '../comps/QizUI'
 import QizUIr from '../comps/QizUIr'
 import InputBtn from '../comps/InputBtn'
 
-import {S3Wraper, S3Content} from './style/style'
+import {S3Wraper} from './style/style'
+
 
 export default function S3page({
     Quiz1Score = 0

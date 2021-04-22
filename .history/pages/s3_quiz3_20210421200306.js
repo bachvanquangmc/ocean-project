@@ -7,10 +7,10 @@ import QizUI from '../comps/QizUI'
 import QizUIr from '../comps/QizUIr'
 import InputBtn from '../comps/InputBtn'
 
-import {S3Wraper, S3Content} from './style/style'
+
 
 export default function S3page({
-    Quiz1Score = 0
+    Quiz3Score = 0
 }) {
 
     var score = 0
@@ -28,11 +28,10 @@ export default function S3page({
         {
             score = score - 1
         }
-        Quiz1Score = score
 
-        localStorage.setItem('quiz1', score)
-        localStorage.setItem('quiz2', 0)
-        localStorage.setItem('quiz3', 0)
+        Quiz3Score = score
+
+        localStorage.setItem('quiz3', score)
         
     }
 
@@ -44,7 +43,7 @@ export default function S3page({
             <S3Content>
                 <QizUI callBack={process}/>
                 <QizUIr callBack={process} />
-                <InputBtn IptRouter={'/score1'}/>
+                <InputBtn IptRouter={'/score3'}/>
             </S3Content>
 
         </S3Wraper>

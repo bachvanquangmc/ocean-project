@@ -9,6 +9,7 @@ import InputBtn from '../comps/InputBtn'
 
 import {S3Wraper, S3Content} from './style/style'
 
+
 export default function S3page({
     Quiz1Score = 0
 }) {

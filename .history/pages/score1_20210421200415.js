@@ -7,7 +7,8 @@ import QizUI from '../comps/QizUI'
 import QizUIr from '../comps/QizUIr'
 import InputBtn from '../comps/InputBtn'
 
-import {S3Wraper, S3Content} from './style/style'
+
+`
 
 export default function S3page({
     score = 0,
@@ -25,7 +26,6 @@ export default function S3page({
 
     finalScore = score + score2 + score3
 
-
     return<S3Wraper>
                 <HiddenMenu />
             <S3Content>
@@ -35,8 +35,8 @@ export default function S3page({
                 <S3text titleColor='yellow' textTitle='Your Final Score ' textBody={finalScore}></S3text>
             </S3Content>
             <S3Content>
-                <InputBtn IptRouter={'/s3_quiz3'} text='Next Quiz'/>
-                <InputBtn IptRouter={'/s3_quiz2'} text='Redo the Quiz'/>
+                <InputBtn IptRouter={'/s3_quiz2'} text='Next Quiz'/>
+                <InputBtn IptRouter={'/s3_quiz1'} text='Redo the Quiz'/>
             </S3Content>
 
         </S3Wraper>
