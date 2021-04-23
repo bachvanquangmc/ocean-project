@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import PageLayout from '../comps/PageLayout'
 import HiddenMenu from '../comps/HiddenMenu'
 import Header from '../comps/Header'
+import {useRouter} from 'next/router'
 
 const Body = styled.div`
     width: 100vw; 
@@ -15,8 +16,11 @@ const Body = styled.div`
 `
 
 export default function S1_food() {
+    const router = useRouter();
   return<Body>
             <Header></Header>
+            <Body onClick={()=>router.push('/s1_economy')}>
             <PageLayout FTitle="Food" STitle="16%" FDiscription="" SDiscription="of all animal protein consumed globally is from the ocean." BackgroundImg="" ImgSource="/sushi.svg"></PageLayout>
+            </Body>
     </Body>
 }

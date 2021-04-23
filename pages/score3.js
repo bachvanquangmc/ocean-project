@@ -36,6 +36,7 @@ export default function S3page({
             <S3Content>
                 <InputBtn IptRouter={'/s3_quiz1'} text='Redo All Quiz'/>
                 <InputBtn IptRouter={'/s3_quiz3'} text='Redo This Quiz'/>
+                <InputBtn IptRouter={'/categories'} text='Back to Home Page'/>
             </S3Content>
 
         </S3WraperS>

@@ -10,17 +10,14 @@ const LandingPage = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-<<<<<<< HEAD
     background-color: #333;
     background-image: url(ocean_background_home.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    // overflow-y: scroll;
-=======
     background: rgb(101,210,255);
     background: linear-gradient(180deg, rgba(101,210,255,1) 0%, rgba(25,149,201,1) 37%, rgba(11,78,138,1) 100%);
->>>>>>> 0789f87e84154acf530dc5fdb3271ebe38fdda85
+
 `
 export default function HomeBody() {
   return<LandingPage>

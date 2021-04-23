@@ -25,11 +25,10 @@ const ImpCont = styled.div`
 
 export default function Protect () {
 
-   
-    return <ImpCont>
+    const router = useRouter();
+    return <ImpCont >
     <HiddenMenu ></HiddenMenu> 
-
-        <TextCont>
+        <TextCont onClick={()=>router.push('/s3_quiz1')}>
         <IntroTitleUI
             Title = "Protection"
         />
