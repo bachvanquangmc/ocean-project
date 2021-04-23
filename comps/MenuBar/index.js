@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import {useRouter} from 'next/router'
 
 const MenuBarWraper = styled.div`
     height: 80px;
-    max-width: 500px;
+    width: 100vw;
     background: rgba(255, 255, 255, 0.2);
     margin: 0px 0 5px 0;
     display: flex;
@@ -19,10 +20,13 @@ const MenuText = styled.h1`
 `
 
 const MenuBar = ({
-    barText = 'Home'
-
+    barText = 'Home',
+    mRouter = '/ '
 }) => {
-    return <MenuBarWraper>
+
+    const menuRouter = useRouter()
+
+    return <MenuBarWraper onClick={()=>{menuRouter.push(mRouter)}}>
             <MenuText>{barText}</MenuText>
         </MenuBarWraper>
 } 

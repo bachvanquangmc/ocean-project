@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import LandingBtns from '../comps/LandingBtns'
-import Logo from '../comps/StartLogo'
+import Logo from '../comps/LogoUI'
 import IntroTitleUI from '../comps/IntroTitleUI';
 
 const LandingPage = styled.div`
-    max-width: 500px;
     height: 100vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
