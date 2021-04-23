@@ -24,11 +24,11 @@ const ImpCont = styled.div`
 `;
 
 export default function Imp () {
- 
+    const router = useRouter();
 
-    return <ImpCont>
+    return <ImpCont >
     <HiddenMenu ></HiddenMenu> 
-
+        <ImpCont onClick={()=>router.push('/s1_oxygen')}>
         <TextCont>
         <IntroTitleUI
             Title = "Importance"
@@ -37,6 +37,6 @@ export default function Imp () {
             Body = "The ocean is so important to us."
         /> 
         </TextCont>
-
+        </ImpCont>
     </ImpCont>
 }

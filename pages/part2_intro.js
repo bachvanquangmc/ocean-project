@@ -24,10 +24,11 @@ const ImpCont = styled.div`
 `;
 
 export default function Threat () {
-
-    return <ImpCont>
+    const router = useRouter();
+    return <ImpCont >
+        
     <HiddenMenu ></HiddenMenu>
-
+    <ImpCont onClick={()=>router.push('/s2_climate')}>
         <TextCont>
         <IntroTitleUI
             Title = "Threats"
@@ -36,6 +37,6 @@ export default function Threat () {
             Body = "To the ocean"
         /> 
         </TextCont> 
-
+        </ImpCont>
     </ImpCont>
 }

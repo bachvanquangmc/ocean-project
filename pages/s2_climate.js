@@ -16,8 +16,10 @@ const Body = styled.div`
 
 export default function S2_climate() {
     const router = useRouter();
-  return<Body onClick={()=>router.push('/s2_plastic')}>
+  return<Body>
                 <Header></Header>
+                <Body onClick={()=>router.push('/s2_plastic')}>
                 <PageLayout FTitle="Climate Change" STitle="Warmer and Acidity" FDiscription="impacts ocean temperature and acidity" SDiscription="Higher temperature and acidity make marine life harder" BackgroundImg="" ImgSource="phytoplankton_less.svg"></PageLayout>
+                </Body>
     </Body>
 }

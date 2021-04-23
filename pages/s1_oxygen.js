@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import PageLayout from '../comps/PageLayout'
 import HiddenMenu from '../comps/HiddenMenu'
 import Header from '../comps/Header'
+import {useRouter} from 'next/router'
 
 
 const Body = styled.div`
@@ -16,8 +17,11 @@ const Body = styled.div`
 `
 
 export default function S1_oxygen() {
+    const router = useRouter();
   return<Body>
             <Header></Header>
+            <Body onClick={()=>router.push('/s1_habitat')}>
             <PageLayout FTitle="Oxygen" STitle="Phytoplankton" FDiscription="Over 50% of the oxygen we breathe is generated from the ocean." SDiscription="are small organisms living in the ocean, and they are the main contributer of oxygen produced within the ocean." BackgroundImg="" ImgSource="/phytoplankton.svg"></PageLayout>
+            </Body>
     </Body>
 }

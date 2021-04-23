@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import PageLayout from '../comps/PageLayout'
 import HiddenMenu from '../comps/HiddenMenu'
 import Header from '../comps/Header'
+import {useRouter} from 'next/router'
 
 const Body = styled.div`
     width: 100vw;
@@ -15,8 +16,11 @@ const Body = styled.div`
 `
 
 export default function S1_economy() {
+    const router = useRouter();
   return<Body>
             <Header></Header>
+            <Body onClick={()=>router.push('/part2_intro')}>
             <PageLayout FTitle="Economy" STitle="Over 3.0 Billion" FDiscription="" SDiscription=" of people depend on the marine and coastal biodiversity to sustain their livelihoods." BackgroundImg="" ImgSource="/shipyard.svg"></PageLayout>
+            </Body>
     </Body>
 }
