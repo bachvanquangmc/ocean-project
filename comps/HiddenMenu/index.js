@@ -16,6 +16,7 @@ const MenuWraper = styled.div`
     display: ${props => props.display};
     position: absolute;
     z-index: 9999;
+
 `
 
 const MenuIconDiv = styled.div`

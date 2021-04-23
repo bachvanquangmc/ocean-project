@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const LayoutDiv = styled.div`
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 275px;
+    padding-bottom: 275px;
     display: flex;
     flex-direction: column;
     align-items: center;

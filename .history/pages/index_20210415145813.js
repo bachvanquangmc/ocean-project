@@ -1,11 +1,21 @@
-import React from 'react'
 import styled from 'styled-components'
+// import your comps here
 import HiddenMenu from '../comps/HiddenMenu'
-import {useRouter} from 'next/router'
+import Category from '../comps/CategoryUI'
+import AppName from '../comps/AppNameUI'
+import LandingBtns from '../comps/LandingBtns'
+import About from '../comps/AboutPageUI'
+import PageLayout from '../comps/PageLayout'
+
+import S3text from '../comps/S3textUI'
+import S3image from '../comps/S3image'
+
+
+
 
 const Home = styled.div`
-    width: 100vw;
-    height: 100vh;
+    max-width: 500px;
+    heigh: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #333;
@@ -17,11 +27,9 @@ const Home = styled.div`
 `
 
 export default function HomeBody() {
-
-  const routerTemp = useRouter()
-
   return<Home>
-            <HiddenMenu />
+          {/* comps go here */}
+            <HiddenMenu></HiddenMenu>
 
             <AppName text="Edu-Ocean"></AppName>
             <Category CatName="Importance" text="Ocean is so important to us" direction="right"/>
@@ -31,12 +39,8 @@ export default function HomeBody() {
             <LandingBtns/>
             <About/>
 
-            <ImpIntro/>
-
             <S3text></S3text>
             <S3image></S3image>
-
-            <ThreatIntro/>
 
             <PageLayout FTitle="Threats" FDiscription="to the Ocean" BackgroundImg="/ocean_background.svg"></PageLayout>
             <PageLayout FTitle="Hi" STitle="Hello" FDiscription="asds" SDiscription="asdasd" BackgroundImg="/marinelife.svg"></PageLayout>
@@ -44,7 +48,6 @@ export default function HomeBody() {
             <PageLayout FTitle="Five Trillion" STitle="Plastic" FDiscription="pieces of plastic pollution are afloat in the oceans" SDiscription="has been found in the ocean as deep as 11km" BackgroundImg="plastic-01.svg"></PageLayout>
             <PageLayout FTitle="Overfishing" STitle="1/3" SDiscription="of global fish stocks are overfished" BackgroundImg="overfishing-01.svg"></PageLayout>
             <PageLayout STitle="Waste Pollution from Ships" SDiscription="Apart from other pollutants such as oil and gas, the waste and garbage generated on board ships poses a significant threat to the marine ecosystem" BackgroundImg="ocean_threats.jpg" ImgSource="fishing_boat1.svg"></PageLayout>
- 
-            <ProIntro/>
+
     </Home>
 }
