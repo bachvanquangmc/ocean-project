@@ -4,7 +4,7 @@ import {QizImg, QizInfo, QizTitle, QizText, QWrapper, QizImgW} from '../../pages
 
 const QizWrapper = styled.div `${QWrapper}`
 
-const QizUI = ({
+const QizUIr = ({
     imgSrc = 'car.svg',
     qizTitle = 'Question 1',
     qizText = 'This is first question',
@@ -24,14 +24,15 @@ const QizUI = ({
     
     
     return <QizWrapper onClick={borderHandle} borderSize={border ? '2' : '0'} >
-        <QizImgW>
-            <QizImg src={imgSrc} />
-        </QizImgW>
         <QizInfo>
             <QizTitle>{qizTitle}</QizTitle>
             <QizText>{qizText}</QizText>
         </QizInfo>
+        <QizImgW>
+            
+        </QizImgW>
+        <QizImg src={imgSrc} />
     </QizWrapper>
 }
 
-export default QizUI
+export default QizUIr

@@ -24,9 +24,8 @@ const QizUI = ({
     
     
     return <QizWrapper onClick={borderHandle} borderSize={border ? '2' : '0'} >
-        <QizImgW>
-            <QizImg src={imgSrc} />
-        </QizImgW>
+        <
+        <QizImg src={imgSrc} />
         <QizInfo>
             <QizTitle>{qizTitle}</QizTitle>
             <QizText>{qizText}</QizText>

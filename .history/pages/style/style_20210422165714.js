@@ -30,7 +30,6 @@ export const QWrapper = css `
     min-height: 150px;
     width: 90vw;
     margin-top: 15px;
-    padding: 0 10px;
     background: rgba(255, 255, 255, 0.2);
     border: rgba(255, 255, 255, 0.5) ${props=> props.borderSize}px solid;
     border-radius: 10px;
@@ -38,40 +37,28 @@ export const QWrapper = css `
     align-items: center;
     color: #FFF;
 `
-export const QizImgW = styled.div `
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    margin: 0 10px;
-`
 
 export const QizImg = styled.img `
     // height:100px;
     width: 100px;
     display: flex;
-    align-items: center;
-    justify-content:center;
-    margin: 10px;
+    margin: 10px 10px 10px 20px;
 `
 
 export const QizInfo = styled.div `
     width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    margin: 0 10px;
+    margin-left: 10px;
 `
 
 export const QizTitle = styled.h3 `
     width: 100%;
     color: yellow;
-    margin: 10px;
+    margin: 10px 0 0 10px;
 `
 
 export const QizText = styled.p `
     width: 100%;
-    margin: 10px;
+    margin: 10px; 0 0 0;
 `

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
-import {QizImg, QizInfo, QizTitle, QizText, QWrapper, QizImgW} from '../../pages/style/style'
+import {QizImg, QizInfo, QizTitle, QizText, QWrapper} from '../../pages/style/style'
 
 const QizWrapper = styled.div `${QWrapper}`
 
@@ -24,9 +24,8 @@ const QizUI = ({
     
     
     return <QizWrapper onClick={borderHandle} borderSize={border ? '2' : '0'} >
-        <QizImgW>
-            <QizImg src={imgSrc} />
-        </QizImgW>
+        <
+        <QizImg src={imgSrc} />
         <QizInfo>
             <QizTitle>{qizTitle}</QizTitle>
             <QizText>{qizText}</QizText>

@@ -30,7 +30,6 @@ export const QWrapper = css `
     min-height: 150px;
     width: 90vw;
     margin-top: 15px;
-    padding: 0 10px;
     background: rgba(255, 255, 255, 0.2);
     border: rgba(255, 255, 255, 0.5) ${props=> props.borderSize}px solid;
     border-radius: 10px;
@@ -44,7 +43,7 @@ export const QizImgW = styled.div `
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    margin: 0 10px;
+    margin: 0 10px 0 10px;
 `
 
 export const QizImg = styled.img `
@@ -62,7 +61,7 @@ export const QizInfo = styled.div `
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    margin: 0 10px;
+    margin: 0 10px 0 10px;
 `
 
 export const QizTitle = styled.h3 `
