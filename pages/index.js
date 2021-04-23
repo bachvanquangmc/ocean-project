@@ -1,50 +1,30 @@
-import React from 'react'
 import styled from 'styled-components'
-import HiddenMenu from '../comps/HiddenMenu'
-import {useRouter} from 'next/router'
+import LandingBtns from '../comps/LandingBtns'
+import Logo from '../comps/LogoUI'
+import IntroTitleUI from '../comps/IntroTitleUI';
 
-const Home = styled.div`
-    width: 100vw;
+const LandingPage = styled.div`
     height: 100vh;
+    width: 100vw;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+<<<<<<< HEAD
     background-color: #333;
     background-image: url(ocean_background_home.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     // overflow-y: scroll;
+=======
+    background: rgb(101,210,255);
+    background: linear-gradient(180deg, rgba(101,210,255,1) 0%, rgba(25,149,201,1) 37%, rgba(11,78,138,1) 100%);
+>>>>>>> 0789f87e84154acf530dc5fdb3271ebe38fdda85
 `
-
 export default function HomeBody() {
-
-  const routerTemp = useRouter()
-
-  return<Home>
-            <HiddenMenu />
-
-            <AppName text="Edu-Ocean"></AppName>
-            <Category CatName="Importance" text="Ocean is so important to us" direction="right"/>
-            <Category CatName="Threats" text="To the ocean" direction="left"/>
-            <Category CatName="Protection" text="Things we can do to save the ocean" direction="right" />
-
-            <LandingBtns/>
-            <About/>
-
-            <ImpIntro/>
-
-            <S3text></S3text>
-            <S3image></S3image>
-
-            <ThreatIntro/>
-
-            <PageLayout FTitle="Threats" FDiscription="to the Ocean" BackgroundImg="/ocean_background.svg"></PageLayout>
-            <PageLayout FTitle="Hi" STitle="Hello" FDiscription="asds" SDiscription="asdasd" BackgroundImg="/marinelife.svg"></PageLayout>
-            <PageLayout FTitle="Climate Change" STitle="Warmer and Acidity" FDiscription="impacts ocean temperature and acidity" SDiscription="Higher temperature and acidity make marine life harder" BackgroundImg="" ImgSource="/phytoplankton_less.svg"></PageLayout>
-            <PageLayout FTitle="Five Trillion" STitle="Plastic" FDiscription="pieces of plastic pollution are afloat in the oceans" SDiscription="has been found in the ocean as deep as 11km" BackgroundImg="plastic-01.svg"></PageLayout>
-            <PageLayout FTitle="Overfishing" STitle="1/3" SDiscription="of global fish stocks are overfished" BackgroundImg="overfishing-01.svg"></PageLayout>
-            <PageLayout STitle="Waste Pollution from Ships" SDiscription="Apart from other pollutants such as oil and gas, the waste and garbage generated on board ships poses a significant threat to the marine ecosystem" BackgroundImg="ocean_threats.jpg" ImgSource="fishing_boat1.svg"></PageLayout>
- 
-            <ProIntro/>
-    </Home>
+  return<LandingPage>
+          <Logo></Logo>
+          <LandingBtns/>
+      </LandingPage>
 }

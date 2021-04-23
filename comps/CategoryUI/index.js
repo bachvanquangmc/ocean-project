@@ -36,8 +36,9 @@ const Category = ({
     text = "Put text here",
     CatName = "Category name",
     direction = "left",
+    onClick=()=>{}
 }) => {
-    return <CatDiv direction={direction}>
+    return <CatDiv onClick={onClick} direction={direction}>
         <CatLink>
             <CatH1>{CatName}</CatH1>
         </CatLink>

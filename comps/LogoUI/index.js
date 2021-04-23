@@ -4,17 +4,16 @@ import AppName from '../AppNameUI'
 
 
 const LogoWraper = styled.div`
-    height: 100vh;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 `
 const LogoImg = styled.div`
-    margin: 150px 0 50px 0;
-    width: 150px;
-    height: 150px;
+    width: 70%;
     transform: rotate(${props => props.rotate}deg);
-    transition: transform 1s;
+    transition: transform 2s;
 `
 const LogoUI = (
     rotate = '0'

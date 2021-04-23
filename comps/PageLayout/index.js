@@ -16,6 +16,7 @@ const LayoutDiv = styled.div`
 
 const ImgSrc = styled.img`
     margin: 0 10px 20px 10px;
+    width: 90%;
 `;
 
 const BigText = styled.div`
@@ -29,6 +30,7 @@ const BigText = styled.div`
 const SmallText = styled.div`
     position: relative;
     margin:15px;
+    margin-bottom: 30px;
     padding: 0 10px 0 10px;
 `;
 const PageLayout = ({
