@@ -3,22 +3,21 @@ import IntroTextUI from '../comps/IntroTextUI';
 import styled from 'styled-components';
 import HiddenMenu from '../comps/HiddenMenu'
 
+const TextCont = styled.div`
+    position:relative;
+    margin:5px;
+    bottom:250px;
+`;
+
 const ImpCont = styled.div`
     display: flex;
+    height:100vh;
     flex-direction: column;
-    background-color: #333;
     background-image: url(ocean_background.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     overflow-y: scroll;
-`;
-
-const TextCont = styled.div`
-    position:relative;
-    margin:5px;
-    bottom:250px;
-
 `;
 
 export default function Protect () {

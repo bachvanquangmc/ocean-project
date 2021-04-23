@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 const Container = styled.div`
     display:flex;
@@ -17,12 +18,12 @@ const TextContainer = styled.div`
     font-family: sans-serif;
 
     max-width: 330px;
+    margin-top: 25px;
 `;
 
 const Names = styled.div`
     margin-bottom: 40px;   
 `;
-
 
 const ButtonContainer = styled.div`
     display:flex;
@@ -56,6 +57,7 @@ const BtnLink = styled.a`
 const AboutUI = ({
     startbtn="#20BEAD",
 }) =>{
+    const router = useRouter();
     return <Container>
         <TextContainer>
             <Names>
@@ -69,7 +71,7 @@ const AboutUI = ({
             <p>This web app will teach you about the importance of the ocean, and to help you understand what kind of threats it is facing. While also providing information on what needs to be done for things to improve.</p>
         </TextContainer>
         <ButtonContainer>        
-            <BtnLink href="https://www.figma.com/proto/FFMRAIgHnmdMigcNRi4h1g/sustainability-web-app?node-id=230%3A478&scaling=min-zoom" target="_blank">
+        <BtnLink onClick={()=>router.push("/categories")}>
                 <Button btncolor={startbtn}>Start</Button>
             </BtnLink>
         </ButtonContainer>

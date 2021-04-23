@@ -11,8 +11,8 @@ const TextCont = styled.div`
 
 const ImpCont = styled.div`
     display: flex;
+    height:100vh;
     flex-direction: column;
-    background-color: #333;
     background-image: url(ocean_background.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@ export default function Threat () {
             Title = "Threats"
         />
         <IntroTextUI
-            Body = "to the ocean"
+            Body = "To the ocean"
         /> 
         </TextCont> 
 
