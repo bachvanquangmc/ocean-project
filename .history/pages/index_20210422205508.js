@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import LandingBtns from '../comps/LandingBtns'
-import LogoUI from '../comps/LogoUI'
+import Logo from '../comps/LogoUI'
 import IntroTitleUI from '../comps/IntroTitleUI';
 
 const LandingPage = styled.div`
@@ -10,6 +10,7 @@ const LandingPage = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
     background-color: #333;
     background-image: url(ocean_background_home.svg);
     background-size: cover;
@@ -21,7 +22,7 @@ const LandingPage = styled.div`
 `
 export default function HomeBody() {
   return<LandingPage>
-          <LogoUI />
+          <Logo></Logo>
           <LandingBtns/>
       </LandingPage>
 }

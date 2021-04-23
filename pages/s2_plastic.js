@@ -8,9 +8,9 @@ const Body = styled.div`
     min-height: 300px;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(/plastic.svg);

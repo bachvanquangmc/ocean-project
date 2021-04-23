@@ -42,10 +42,10 @@ const HiddenMenu = ({
             <img src='menubar.png' width='40px' height='40px' />
         </MenuIconDiv>
         <MenuWraper display={menu ? 'block' : 'none'} >
-            <MenuBar mRouter='/' barText='Home'></MenuBar>
-            <MenuBar barText='Importance'></MenuBar>
-            <MenuBar barText='Threats'></MenuBar>
-            <MenuBar mRouter='/s3_quiz1' barText='Protection'></MenuBar>
+            <MenuBar mRouter='/categories' barText='Home'></MenuBar>
+            <MenuBar mRouter='/part1_intro' barText='Importance'></MenuBar>
+            <MenuBar mRouter='/part2_intro' barText='Threats'></MenuBar>
+            <MenuBar mRouter='/part3_intro' barText='Protection'></MenuBar>
         </MenuWraper>
     </div>
         

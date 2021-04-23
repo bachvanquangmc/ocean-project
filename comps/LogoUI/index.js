@@ -11,7 +11,7 @@ const LogoWraper = styled.div`
     margin-bottom: 50px;
 `
 const LogoImg = styled.div`
-    width: 70%;
+    width: 150px;
     transform: rotate(${props => props.rotate}deg);
     transition: transform 2s;
 `
