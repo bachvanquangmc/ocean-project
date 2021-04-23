@@ -1,0 +1,40 @@
+import React from 'react'
+import styled from 'styled-components'
+import HiddenMenu from '../comps/HiddenMenu'
+import S3text from '../comps/S3textUI'
+import S3image from '../comps/S3image'
+import QizUI from '../comps/QizUI'
+import QizUIr from '../comps/QizUIr'
+
+const S3Wraper = styled.div`
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(25, 149, 201, 0.79) 0%, #1995C9 41.15%, #116DA5 100%);
+    z-index: -1;
+`
+
+const S3Conten = styled.div `
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+`
+
+export default function S3page() {
+  return<S3Wraper>
+            <HiddenMenu />
+            <S3text titleColor='yellow' textTitle='Hello' textBody='What a wonderful app'></S3text>
+
+        <S3Conten>
+            <QizUI />
+            <QizUIr />
+        </S3Conten>
+
+            
+
+    </S3Wraper>
+}

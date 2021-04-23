@@ -8,14 +8,15 @@ const MenuWraper = styled.div`
     display: flex;
     flex-direction: column;
     top: 0px;
-    max-width: 500px;
-    max-height: 830px;
+    width: 100vw;
+    height: 100vh;
     padding: 80px 0 80px 0;
     background-color: #0B4E8A;
-    position: relative;
-    left: ${props => props.left}px;
-    transition: 300ms;
-    z-index: 1;
+    opacity: 0.9;
+    display: ${props => props.display};
+    position: absolute;
+    z-index: 9999;
+
 `
 
 const MenuIconDiv = styled.div`
@@ -23,12 +24,11 @@ const MenuIconDiv = styled.div`
     height: 40px;
     margin: 3px;
     position: absolute;
-    z-index: 2;
-
+    z-index: 10000;
 `
 
 const HiddenMenu = ({
-    left='-500'
+    display = 'none'
 }) => {
     const [menu, setMenu] = useState(false)
 
@@ -41,11 +41,11 @@ const HiddenMenu = ({
         <MenuIconDiv onClick={menuHandle}>
             <img src='menubar.png' width='40px' height='40px' />
         </MenuIconDiv>
-        <MenuWraper left={menu ? 0 : -500} >
-            <MenuBar barText='Home'></MenuBar>
+        <MenuWraper display={menu ? 'block' : 'none'} >
+            <MenuBar mRouter='/' barText='Home'></MenuBar>
             <MenuBar barText='Importance'></MenuBar>
             <MenuBar barText='Threats'></MenuBar>
-            <MenuBar barText='Protection'></MenuBar>
+            <MenuBar mRouter='/s3_quiz1' barText='Protection'></MenuBar>
         </MenuWraper>
     </div>
         
