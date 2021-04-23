@@ -62,7 +62,7 @@ export const QizInfo = styled.div `
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    margin: 0 10px;
+    margin: 0 10px 0 10px;
 `
 
 export const QizTitle = styled.h3 `
