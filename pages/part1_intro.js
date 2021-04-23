@@ -2,11 +2,14 @@ import IntroTitleUI from '../comps/IntroTitleUI';
 import IntroTextUI from '../comps/IntroTextUI';
 import styled from 'styled-components';
 import HiddenMenu from '../comps/HiddenMenu'
+import {useRouter} from 'next/router';
 
 const TextCont = styled.div`
+    display:flex;
+    flex-direction: column; 
     position:relative;
-    margin:5px;
-    bottom:250px;
+    padding-top: 300px;
+    padding-bottom: 300px;
 `;
 
 const ImpCont = styled.div`
@@ -22,6 +25,7 @@ const ImpCont = styled.div`
 
 export default function Imp () {
  
+
     return <ImpCont>
     <HiddenMenu ></HiddenMenu> 
 
