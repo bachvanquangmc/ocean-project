@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 import PageLayout from '../comps/PageLayout'
 import HiddenMenu from '../comps/HiddenMenu'
+import Header from '../comps/Header'
 
 const Body = styled.div`
-    min-height: 300px;
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -15,6 +16,7 @@ const Body = styled.div`
 
 export default function S1_economy() {
   return<Body>
-                <PageLayout FTitle="Economy" STitle="Over 3.0 Billion" FDiscription="" SDiscription=" of people depend on the marine and coastal biodiversity to sustain their livelihoods." BackgroundImg="" ImgSource="/shipyard.svg"></PageLayout>
+            <Header></Header>
+            <PageLayout FTitle="Economy" STitle="Over 3.0 Billion" FDiscription="" SDiscription=" of people depend on the marine and coastal biodiversity to sustain their livelihoods." BackgroundImg="" ImgSource="/shipyard.svg"></PageLayout>
     </Body>
 }

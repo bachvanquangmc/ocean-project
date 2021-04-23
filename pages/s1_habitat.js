@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 import PageLayout from '../comps/PageLayout'
 import HiddenMenu from '../comps/HiddenMenu'
+import Header from '../comps/Header'
 
 const Body = styled.div`
-    min-height: 300px;
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -17,6 +18,7 @@ const Body = styled.div`
 
 export default function S1_habitat() {
   return<Body>
-                <PageLayout FTitle="Home" STitle="91%" FDiscription="is what an abundance of sealife call the ocean." SDiscription="of species within the ocean still await identification." BackgroundImg="" ImgSource=""></PageLayout>
+            <Header></Header>
+            <PageLayout FTitle="Home" STitle="91%" FDiscription="Is what the ocean is to an abundance of sealife. With around 230,000 species recorded so far." SDiscription="Of species within the ocean are still awaiting classification." BackgroundImg="" ImgSource=""></PageLayout>
     </Body>
 }
