@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import LandingBtns from '../comps/LandingBtns'
-import Logo from '../comps/LogoUI'
+import LogoUI from '../comps/LogoUI'
 import IntroTitleUI from '../comps/IntroTitleUI';
 
 const LandingPage = styled.div`
@@ -21,7 +21,7 @@ const LandingPage = styled.div`
 `
 export default function HomeBody() {
   return<LandingPage>
-          <Logo></Logo>
+          <LogoUI />
           <LandingBtns/>
       </LandingPage>
 }
