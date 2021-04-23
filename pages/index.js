@@ -1,24 +1,10 @@
+import React from 'react'
 import styled from 'styled-components'
-// import your comps here
 import HiddenMenu from '../comps/HiddenMenu'
-import Category from '../comps/CategoryUI'
-import AppName from '../comps/AppNameUI'
-import LandingBtns from '../comps/LandingBtns'
-import About from '../comps/AboutPageUI'
-import PageLayout from '../comps/PageLayout'
-
-import S3text from '../comps/S3textUI'
-import S3image from '../comps/S3image'
-
-import ImpIntro from '../comps/Part1Intro'
-import ThreatIntro from '../comps/Part2Intro'
-import ProIntro from '../comps/Part3Intro'
-
-
-
+import {useRouter} from 'next/router'
 
 const Home = styled.div`
-    max-width: 500px;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -31,9 +17,11 @@ const Home = styled.div`
 `
 
 export default function HomeBody() {
+
+  const routerTemp = useRouter()
+
   return<Home>
-          {/* comps go here */}
-            <HiddenMenu></HiddenMenu>
+            <HiddenMenu />
 
             <AppName text="Edu-Ocean"></AppName>
             <Category CatName="Importance" text="Ocean is so important to us" direction="right"/>
