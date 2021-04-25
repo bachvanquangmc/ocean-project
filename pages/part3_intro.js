@@ -33,7 +33,7 @@ export default function Protect () {
             Title = "Protection"
         />
         <IntroTextUI
-            Body = "Things we can do to save the ocean."
+            Body = "Let's do three quizs to learn the things we can do to save the ocean."
         /> 
         </TextCont>
 

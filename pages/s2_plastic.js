@@ -5,7 +5,7 @@ import {useRouter} from 'next/router'
 import Header from '../comps/Header'
 
 const Body = styled.div`
-    min-height: 300px;
+    // min-height: 300px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@ const Body = styled.div`
     justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/plastic.svg);
+    background-image: url(/plastic-01.svg);
 `
 
 export default function S2_plastic() {

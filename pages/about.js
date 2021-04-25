@@ -10,6 +10,7 @@ const AboutPage = styled.div`
     flex-direction: column;
     background: rgb(101,210,255);
     background: linear-gradient(180deg, rgba(101,210,255,1) 0%, rgba(25,149,201,1) 37%, rgba(11,78,138,1) 100%);
+    z-index: -1;
 `
 
 export default function HomeBody() {
