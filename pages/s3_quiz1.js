@@ -4,7 +4,7 @@ import S3text from '../comps/S3textUI'
 import QizUI from '../comps/QizUI'
 import QizUIr from '../comps/QizUIr'
 import InputBtn from '../comps/InputBtn'
-import {S3Wraper, S3Content} from './style/style'
+import {S3Wraper, S3Content} from '../styles/style'
 import {quiz1} from '../data/quiztext'
 
 export default function S3page({

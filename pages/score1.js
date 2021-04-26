@@ -2,7 +2,7 @@ import React from 'react'
 import HiddenMenu from '../comps/HiddenMenu'
 import S3text from '../comps/S3textUI'
 import InputBtn from '../comps/InputBtn'
-import {S3WraperS, S3Content} from './style/style'
+import {S3WraperS, S3Content} from '../styles/style'
 
 export default function S3page({
     score = 0,
