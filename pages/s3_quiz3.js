@@ -32,7 +32,10 @@ export default function S3page({
             Quiz3Score = score
         }
 
-        localStorage.setItem('quiz3', Quiz3Score)
+        if(process.browser)
+        {
+            sessionStorage.setItem('quiz3', Quiz3Score)
+        }
         
     }
 

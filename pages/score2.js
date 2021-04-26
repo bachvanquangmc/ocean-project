@@ -11,14 +11,16 @@ export default function S3page({
     finalScore = 0
 }) {
 
+    if(process.browser)
+    {
+        score = sessionStorage.getItem('quiz1') * 100
     
-    score = localStorage.getItem('quiz1') * 100
-
-    score2 = localStorage.getItem('quiz2') * 100
-
-    score3 = localStorage.getItem('quiz3') * 100
-
-    finalScore = score + score2 + score3
+        score2 = sessionStorage.getItem('quiz2') * 100
+    
+        score3 = sessionStorage.getItem('quiz3') * 100
+    
+        finalScore = score + score2 + score3
+    }
 
 
     return<S3WraperS>
