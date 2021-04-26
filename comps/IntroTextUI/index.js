@@ -5,7 +5,7 @@ const ParaCont = styled.div`
 `;
 
 const Para1 = styled.p`
-    color:#ffffff;   
+    color: #ffffff;   
     text-align: center;
     margin:10px;
     text-shadow: 1px 1px 1px black;
