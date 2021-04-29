@@ -6,6 +6,7 @@ import QizUIr from '../comps/QizUIr'
 import InputBtn from '../comps/InputBtn'
 import {S3Wraper, S3Content} from '../styles/style'
 import {quiz3} from '../data/quiztext'
+import QuizIndeUI from '../comps/QuizIndeUI'
 
 export default function S3page({
     Quiz3Score = 0
@@ -40,7 +41,8 @@ export default function S3page({
     }
 
     return<S3Wraper>
-                <HiddenMenu />
+            <HiddenMenu />
+            <QuizIndeUI  />
             <S3Content>
                 <S3text titleColor='yellow' textTitle='Quiz Three: What are Canadian sustainable seafoods' textBody='Please click on the ways you think it will work'></S3text>
             </S3Content>
@@ -48,9 +50,9 @@ export default function S3page({
                 {quiz3.map((v,i)=>{
                     return <QizUI 
                         key = {i} 
-                        quizIndex = {v.qizIndex}
-                        quizTitle = {v.qizTitle}
-                        quizText = {v.qizText}
+                        qizIndex = {v.qizIndex}
+                        qizTitle = {v.qizTitle}
+                        qizText = {v.qizText}
                         imgSrc = {v.imgSrc}
                         callBack ={process}
                     />
