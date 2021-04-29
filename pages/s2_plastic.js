@@ -3,6 +3,7 @@ import PageLayout from '../comps/PageLayout'
 import HiddenMenu from '../comps/HiddenMenu'
 import {useRouter} from 'next/router'
 import Header from '../comps/Header'
+import NextButton from '../comps/NextButton'
 
 const Body = styled.div`
     // min-height: 300px;
@@ -18,10 +19,12 @@ const Body = styled.div`
 
 export default function S2_plastic() {
     const router = useRouter();
-  return <div >
+  return <Body >
             <Header></Header>
-            <Body onClick={()=>router.push('/s2_overfishing')}>
+           
                 <PageLayout FTitle="Five Trillion" STitle="Plastic" FDiscription="pieces of plastic pollution are afloat in the oceans" SDiscription="has been found in the ocean as deep as 11km" BackgroundImg="" ImgSource=""></PageLayout>
+        <div onClick={()=>router.push('/s2_overfishing')}>
+            <NextButton></NextButton>
+        </div>
     </Body>
-    </div>
 }
