@@ -1,41 +1,36 @@
+import styled from 'styled-components'
+import Header from '../comps/Header'
+import {useRouter} from 'next/router'
 import IntroTitleUI from '../comps/IntroTitleUI';
 import IntroTextUI from '../comps/IntroTextUI';
-import styled from 'styled-components';
-import HiddenMenu from '../comps/HiddenMenu'
-import {useRouter} from 'next/router';
 
 const TextCont = styled.div`
-    display:flex;
-    flex-direction: column; 
-    position:relative;
-    padding-top: 300px;
-    padding-bottom: 300px;
 `;
 
 const ImpCont = styled.div`
+    min-width: 100vw;
+    height: 100vh;
     display: flex;
-    height:100vh;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    background-color: #333;
     background-image: url(ocean_background.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    overflow-y: scroll;
 `;
 
 export default function Protect () {
 
     const router = useRouter();
     return <ImpCont >
-    <HiddenMenu ></HiddenMenu> 
-        <TextCont onClick={()=>router.push('/s3_quiz1')}>
-        <IntroTitleUI
-            Title = "Protection"
-        />
-        <IntroTextUI
-            Body = "Let's do three quizs to learn the things we can do to save the ocean."
-        /> 
-        </TextCont>
-
-    </ImpCont>
+                <Header></Header>
+                <ImpCont onClick={()=>router.push('/s3_quiz1')}>  
+                        <TextCont  >
+                            <IntroTitleUI Title = "Protection"/>
+                            <IntroTextUI Body = "What we can do to protect the ocean." />
+                        </TextCont>
+                </ImpCont>
+            </ImpCont>
 }
