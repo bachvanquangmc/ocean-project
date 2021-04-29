@@ -46,12 +46,16 @@ export default function S3page({
                 <S3text titleColor='yellow' textTitle='Quiz Two: What can I do to reduce plastic waste?' textBody='Please click on the ways you think it will work'></S3text>
             </S3Content>
             <S3Content>
-                <QizUI qizIndex={quiz2.Q1.qizIndex}  qizTitle={quiz2.Q1.qizTitle} qizText={quiz2.Q1.qizText} imgSrc={quiz2.Q1.imgSrc} callBack={process}/>
-                <QizUIr qizIndex={quiz2.Q2.qizIndex}  qizTitle={quiz2.Q2.qizTitle} qizText={quiz2.Q2.qizText} imgSrc={quiz2.Q2.imgSrc} callBack={process}/>
-                <QizUI qizIndex={quiz2.Q3.qizIndex}  qizTitle={quiz2.Q3.qizTitle} qizText={quiz2.Q3.qizText} imgSrc={quiz2.Q3.imgSrc} callBack={process}/>
-                <QizUIr qizIndex={quiz2.Q4.qizIndex}  qizTitle={quiz2.Q4.qizTitle} qizText={quiz2.Q4.qizText} imgSrc={quiz2.Q4.imgSrc} callBack={process}/>
-                <QizUI qizIndex={quiz2.Q5.qizIndex}  qizTitle={quiz2.Q5.qizTitle} qizText={quiz2.Q5.qizText} imgSrc={quiz2.Q5.imgSrc} callBack={process}/>
-                <QizUIr qizIndex={quiz2.Q6.qizIndex}  qizTitle={quiz2.Q6.qizTitle} qizText={quiz2.Q6.qizText} imgSrc={quiz2.Q6.imgSrc} callBack={process}/>
+                {quiz2.map((v,i)=>{
+                    return <QizUI 
+                        key = {i} 
+                        quizIndex = {v.qizIndex}
+                        quizTitle = {v.qizTitle}
+                        quizText = {v.qizText}
+                        imgSrc = {v.imgSrc}
+                        callBack ={process}
+                    />
+                })}
 
                 <InputBtn IptRouter={'/score2'}/>
             </S3Content>

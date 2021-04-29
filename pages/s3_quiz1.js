@@ -41,18 +41,23 @@ export default function S3page({
         
     }
 
+
     return<S3Wraper>
                 <HiddenMenu />
             <S3Content>
                 <S3text titleColor='yellow' textTitle='Quiz One: What can I do to help prevent climate change?' textBody='Please click on the ways you think it will work'></S3text>
             </S3Content>
             <S3Content>
-                <QizUI qizIndex={quiz1.Q1.qizIndex}  qizTitle={quiz1.Q1.qizTitle} qizText={quiz1.Q1.qizText} imgSrc={quiz1.Q1.imgSrc} callBack={process}/>
-                <QizUIr qizIndex={quiz1.Q2.qizIndex}  qizTitle={quiz1.Q2.qizTitle} qizText={quiz1.Q2.qizText} imgSrc={quiz1.Q2.imgSrc} callBack={process}/>
-                <QizUI qizIndex={quiz1.Q3.qizIndex}  qizTitle={quiz1.Q3.qizTitle} qizText={quiz1.Q3.qizText} imgSrc={quiz1.Q3.imgSrc} callBack={process}/>
-                <QizUIr qizIndex={quiz1.Q4.qizIndex}  qizTitle={quiz1.Q4.qizTitle} qizText={quiz1.Q4.qizText} imgSrc={quiz1.Q4.imgSrc} callBack={process}/>
-                <QizUI qizIndex={quiz1.Q5.qizIndex}  qizTitle={quiz1.Q5.qizTitle} qizText={quiz1.Q5.qizText} imgSrc={quiz1.Q5.imgSrc} callBack={process}/>
-                <QizUIr qizIndex={quiz1.Q6.qizIndex}  qizTitle={quiz1.Q6.qizTitle} qizText={quiz1.Q6.qizText} imgSrc={quiz1.Q6.imgSrc} callBack={process}/>
+                {quiz1.map((v,i)=>{
+                    return <QizUI 
+                        key = {i} 
+                        quizIndex = {v.qizIndex}
+                        quizTitle = {v.qizTitle}
+                        quizText = {v.qizText}
+                        imgSrc = {v.imgSrc}
+                        callBack ={process}
+                    />
+                })}
                 
                 <InputBtn IptRouter={'/score1'}/>
             </S3Content>
