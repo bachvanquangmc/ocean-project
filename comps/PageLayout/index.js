@@ -2,21 +2,30 @@ import React from 'react';
 import styled from 'styled-components';
 
 const LayoutDiv = styled.div`
-    padding-top: 275px;
-    padding-bottom: 275px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-image: url(${props=>props.BackgroundImg});
     color:#FFF;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    max-width: 600px;
+`;
+
+const LayoutContent = styled.div`
+    padding: 200px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 `;
 
 const ImgSrc = styled.img`
     margin: 0 10px 20px 10px;
-    width: 90%;
+    width: 80%;
+    margin: 30px 0;
 `;
 
 const BigText = styled.div`
@@ -31,8 +40,17 @@ const SmallText = styled.div`
     position: relative;
     margin:15px;
     margin-bottom: 30px;
-    padding: 0 10px 0 10px;
+    padding: 10px; 
 `;
+
+const TextContainer = styled.div`
+    width: 90%;
+    background: rgba(0, 20, 30, .4);
+    margin: 10px
+    border: none;
+    border-radius: 10px;
+`;
+
 const PageLayout = ({
     FTitle="",
     STitle="",
@@ -43,12 +61,17 @@ const PageLayout = ({
 
 }) => {
     return <LayoutDiv BackgroundImg={BackgroundImg}>
-        
-        <BigText>{FTitle}</BigText>
-        <SmallText>{FDiscription}</SmallText>
-        <ImgSrc src={ImgSource}></ImgSrc>
-        <BigText>{STitle}</BigText>
-        <SmallText>{SDiscription}</SmallText>
+        <LayoutContent>
+          <TextContainer>
+          <BigText>{FTitle}</BigText>
+          <SmallText>{FDiscription}</SmallText>
+          </TextContainer>
+          <ImgSrc src={ImgSource}></ImgSrc>
+          <TextContainer>
+          <BigText>{STitle}</BigText>
+          <SmallText>{SDiscription}</SmallText>
+          </TextContainer>
+        </LayoutContent>
     </LayoutDiv>
 }
 
