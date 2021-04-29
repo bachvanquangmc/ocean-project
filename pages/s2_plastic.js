@@ -21,10 +21,9 @@ export default function S2_plastic() {
     const router = useRouter();
   return <Body >
             <Header></Header>
-           
                 <PageLayout FTitle="Five Trillion" STitle="Plastic" FDiscription="pieces of plastic pollution are afloat in the oceans" SDiscription="has been found in the ocean as deep as 11km" BackgroundImg="" ImgSource=""></PageLayout>
-        <div onClick={()=>router.push('/s2_overfishing')}>
-            <NextButton></NextButton>
-        </div>
+                <div onClick={()=>router.push('/s2_overfishing')}>
+                    <NextButton></NextButton>
+                </div>
     </Body>
 }

@@ -6,12 +6,14 @@ const ButtonCont = styled.div`
     align-items:center;
     position:relative;
     bottom:150px;
+
 `
 const ButtonImg = styled.img`
     width: 300px;
 `
 const Text = styled.h4`
     color:#FFFFFF;
+    margin-top:0px;
 `;
 const NextButton = (
 

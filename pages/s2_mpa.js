@@ -3,6 +3,7 @@ import PageLayout from '../comps/PageLayout'
 import HiddenMenu from '../comps/HiddenMenu'
 import {useRouter} from 'next/router'
 import Header from '../comps/Header'
+import NextButton from '../comps/NextButton'
 
 const Body = styled.div`
     min-height: 300px;
@@ -19,5 +20,6 @@ export default function S2_mpa() {
   return<Body onClick={()=>router.push('/part3_intro')}>
                 <Header></Header>
                 <PageLayout FTitle="Only 2%" STitle="MPA" FDiscription="of global oceans are included in strongly protected marine parks" SDiscription="Marine Protected Areas(MPA) are areas of ocean set aside for long-term conservation aims" BackgroundImg="" ImgSource="/mpa.svg"></PageLayout>
+
     </Body>
 }
