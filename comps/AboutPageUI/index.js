@@ -7,7 +7,13 @@ const Container = styled.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    max-width: 500px;
 `;
+
+const Image = styled.img`
+    height: 15%;
+    margin-bottom: 25px;
+`
 
 const TextContainer = styled.div`
     display:flex;
@@ -17,13 +23,36 @@ const TextContainer = styled.div`
     color: white;
     font-family: sans-serif;
 
-    max-width: 330px;
-    margin-top: 25px;
+    max-width: 90%;
+    margin-bottom: 20px;
 `;
 
 const Names = styled.div`
-    margin-top: 80px;   
+display:flex;
+flex-direction:column;
+justify-content:center;
+text-align: center;
+color: white;
+font-family: sans-serif;
+line-height: 0;
+
+margin: 10px;
 `;
+
+const Title = styled.h1 `
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 0;
+
+    max-width: 330px;
+`;
+
 
 const ButtonContainer = styled.div`
     display:flex;
@@ -56,27 +85,28 @@ const BtnLink = styled.a`
 
 const AboutUI = ({
     startbtn="#20BEAD",
+    ImageSrc = '/logo_white.svg',
 }) =>{
     const router = useRouter();
     return <Container>
+        <Image src={ImageSrc}></Image>
+        <Title>Our Purpose</Title>
         <TextContainer>
-            <h2>Edu-Ocean's Purpose</h2>
             <p>This web app will teach you about the importance of the ocean, and to help you understand what kind of threats it is facing. While also providing information on what needs to be done for things to improve.</p>
-            <Names>
-            <h2>Developed By:</h2>
+        </TextContainer>
+        <Title>Developed By:</Title>
+        <Names>
             <p>Warren</p>
             <p>Maharlika</p>
             <p>Blen</p>
             <p>Quang</p>
-            </Names>
-        </TextContainer>
+        </Names>
         <ButtonContainer>        
         <BtnLink onClick={()=>router.push("/categories")}>
                 <Button btncolor={startbtn}>Start</Button>
             </BtnLink>
         </ButtonContainer>
     </Container>
-    
 }
 
 export default AboutUI;
