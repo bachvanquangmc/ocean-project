@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
-import {QizImg, QizInfo, QizTitle, QizText, QWrapper, QizImgW} from '../../pages/style/style'
+import {QizImg, QizInfo, QizTitle, QizText, QWrapper, QizImgW} from '../../styles/style'
 
 const QizWrapper = styled.div `${QWrapper}`
 

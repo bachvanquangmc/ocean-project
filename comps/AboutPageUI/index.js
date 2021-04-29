@@ -22,7 +22,7 @@ const TextContainer = styled.div`
 `;
 
 const Names = styled.div`
-    margin-bottom: 40px;   
+    margin-top: 80px;   
 `;
 
 const ButtonContainer = styled.div`
@@ -60,6 +60,8 @@ const AboutUI = ({
     const router = useRouter();
     return <Container>
         <TextContainer>
+            <h2>Edu-Ocean's Purpose</h2>
+            <p>This web app will teach you about the importance of the ocean, and to help you understand what kind of threats it is facing. While also providing information on what needs to be done for things to improve.</p>
             <Names>
             <h2>Developed By:</h2>
             <p>Warren</p>
@@ -67,8 +69,6 @@ const AboutUI = ({
             <p>Blen</p>
             <p>Quang</p>
             </Names>
-            <h2>Edu-Ocean's Purpose</h2>
-            <p>This web app will teach you about the importance of the ocean, and to help you understand what kind of threats it is facing. While also providing information on what needs to be done for things to improve.</p>
         </TextContainer>
         <ButtonContainer>        
         <BtnLink onClick={()=>router.push("/categories")}>

@@ -1,12 +1,10 @@
 import React from 'react'
-import styled from 'styled-components'
 import HiddenMenu from '../comps/HiddenMenu'
 import S3text from '../comps/S3textUI'
-import S3image from '../comps/S3image'
 import QizUI from '../comps/QizUI'
 import QizUIr from '../comps/QizUIr'
 import InputBtn from '../comps/InputBtn'
-import {S3Wraper, S3Content} from './style/style'
+import {S3Wraper, S3Content} from '../styles/style'
 import {quiz1} from '../data/quiztext'
 
 export default function S3page({
@@ -34,9 +32,12 @@ export default function S3page({
             Quiz1Score = score
         }
 
-        localStorage.setItem('quiz1', Quiz1Score)
-        localStorage.setItem('quiz2', 0)
-        localStorage.setItem('quiz3', 0)
+        if(process.browser)
+        {
+            sessionStorage.setItem('quiz1', Quiz1Score)
+            sessionStorage.setItem('quiz2', 0)
+            sessionStorage.setItem('quiz3', 0)
+        }
         
     }
 

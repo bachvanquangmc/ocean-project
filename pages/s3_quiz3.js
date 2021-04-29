@@ -1,12 +1,10 @@
 import React from 'react'
-import styled from 'styled-components'
 import HiddenMenu from '../comps/HiddenMenu'
 import S3text from '../comps/S3textUI'
-import S3image from '../comps/S3image'
 import QizUI from '../comps/QizUI'
 import QizUIr from '../comps/QizUIr'
 import InputBtn from '../comps/InputBtn'
-import {S3Wraper, S3Content} from './style/style'
+import {S3Wraper, S3Content} from '../styles/style'
 import {quiz3} from '../data/quiztext'
 
 export default function S3page({
@@ -34,14 +32,17 @@ export default function S3page({
             Quiz3Score = score
         }
 
-        localStorage.setItem('quiz3', Quiz3Score)
+        if(process.browser)
+        {
+            sessionStorage.setItem('quiz3', Quiz3Score)
+        }
         
     }
 
     return<S3Wraper>
                 <HiddenMenu />
             <S3Content>
-                <S3text titleColor='yellow' textTitle='Quiz Three: What are Canadian sustainable seafoords' textBody='Please click on the ways you think it will work'></S3text>
+                <S3text titleColor='yellow' textTitle='Quiz Three: What are Canadian sustainable seafoods' textBody='Please click on the ways you think it will work'></S3text>
             </S3Content>
             <S3Content>
                 <QizUI qizIndex={quiz3.Q1.qizIndex}  qizTitle={quiz3.Q1.qizTitle} qizText={quiz3.Q1.qizText} imgSrc={quiz3.Q1.imgSrc} callBack={process}/>

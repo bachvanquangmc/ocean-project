@@ -23,8 +23,8 @@ export default function HomeBody() {
     const router = useRouter();
   return<Home >
             <Header></Header>
-            <Category onClick={()=>router.push('/part1_intro')} CatName="Importance" text="Ocean is so important to us" direction="right"/>
-            <Category onClick={()=>router.push('/part2_intro')} CatName="Threats" text="To the ocean" direction="left"/>
-            <Category onClick={()=>router.push('/part3_intro')} CatName="Protection" text="Things we can do to save the ocean" direction="right" />
+            <Category onClick={()=>router.push('/part1_intro')} CatName="Importance" text="Ocean is so important to us.  Click to learn more." direction="right"/>
+            <Category onClick={()=>router.push('/part2_intro')} CatName="Threats" text="To the ocean. Click to learn more." direction="left"/>
+            <Category onClick={()=>router.push('/part3_intro')} CatName="Protection" text="Things we can do to save the ocean. Click to learn more." direction="right" />
     </Home>
 }

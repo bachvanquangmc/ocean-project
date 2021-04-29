@@ -46,6 +46,7 @@ const HiddenMenu = ({
             <MenuBar mRouter='/part1_intro' barText='Importance'></MenuBar>
             <MenuBar mRouter='/part2_intro' barText='Threats'></MenuBar>
             <MenuBar mRouter='/part3_intro' barText='Protection'></MenuBar>
+            <MenuBar mRouter='/about' barText='About'></MenuBar>
         </MenuWraper>
     </div>
         
