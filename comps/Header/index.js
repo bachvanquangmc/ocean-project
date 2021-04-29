@@ -4,7 +4,7 @@ import HiddenMenu from '../HiddenMenu/index.js'
 
 const HeaderWrapper = styled.div`
     width: 100vw;
-    background: rgba(20, 60, 100, .9);
+    background: rgba(20, 60, 100, 1);
     margin: 0px 0 5px 0;
     color: #FFF;
     position: fixed;

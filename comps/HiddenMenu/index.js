@@ -22,6 +22,7 @@ const MenuWraper = styled.div`
 const MenuIconDiv = styled.div`
     width: 40px;
     height: 40px;
+    top: 8px;
     margin: 3px;
     position: absolute;
     z-index: 10000;
