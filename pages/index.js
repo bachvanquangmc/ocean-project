@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import LandingBtns from '../comps/LandingBtns'
 import LogoUI from '../comps/LogoUI'
-import IntroTitleUI from '../comps/IntroTitleUI';
 
 const LandingPage = styled.div`
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -24,4 +24,5 @@ export default function HomeBody() {
           <LogoUI />
           <LandingBtns/>
       </LandingPage>
+
 }
