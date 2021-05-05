@@ -1,32 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import MenuBar from '../MenuBar'
+import BackBtn from '../BackBtn'
 import {useState} from 'react'
-import { loadGetInitialProps } from 'next/dist/next-server/lib/utils'
-
-const MenuWraper = styled.div`
-    display: flex;
-    flex-direction: column;
-    top: 0px;
-    width: 100vw;
-    height: 100vh;
-    padding: 80px 0 80px 0;
-    background-color: #0B4E8A;
-    opacity: 0.9;
-    display: ${props => props.display};
-    position: absolute;
-    z-index: 9999;
-
-`
-
-const MenuIconDiv = styled.div`
-    width: 40px;
-    height: 40px;
-    top: 8px;
-    margin: 3px;
-    position: absolute;
-    z-index: 10000;
-`
+import {Wrapper, MenuWraper, MenuTop, MenuIconDiv} from './style'
 
 const HiddenMenu = ({
     display = 'none'
@@ -38,10 +15,13 @@ const HiddenMenu = ({
         setMenu(!menu)
     }
 
-    return <div>
-        <MenuIconDiv onClick={menuHandle}>
-            <img src='menubar.png' width='40px' height='40px' />
-        </MenuIconDiv>
+    return <Wrapper>
+        <MenuTop>
+            <MenuIconDiv onClick={menuHandle}>
+                <img src='menubar.png' width='40px' height='40px' />
+            </MenuIconDiv>
+            <BackBtn />
+        </MenuTop>
         <MenuWraper display={menu ? 'block' : 'none'} >
             <MenuBar mRouter='/categories' barText='Home'></MenuBar>
             <MenuBar mRouter='/part1_intro' barText='Importance'></MenuBar>
@@ -49,9 +29,7 @@ const HiddenMenu = ({
             <MenuBar mRouter='/part3_intro' barText='Protection'></MenuBar>
             <MenuBar mRouter='/about' barText='About'></MenuBar>
         </MenuWraper>
-    </div>
-        
-
+    </Wrapper>
 } 
 
 export default HiddenMenu

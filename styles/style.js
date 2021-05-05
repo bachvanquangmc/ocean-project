@@ -3,6 +3,7 @@ import styled, {css} from 'styled-components'
 export const S3Wraper = styled.div`
     width: 100vw;
     height: 100%;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     background: linear-gradient(180deg, rgba(25, 149, 201, 0.79) 0%, #1995C9 41.15%, #116DA5 100%);
@@ -12,6 +13,7 @@ export const S3Wraper = styled.div`
 export const S3WraperS = styled.div`
     width: 100vw;
     height: 100vh;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     background: linear-gradient(180deg, rgba(25, 149, 201, 0.79) 0%, #1995C9 41.15%, #116DA5 100%);
@@ -24,6 +26,14 @@ export const S3Content = styled.div `
     flex-direction: column;
     align-items: center;
     justify-content: center;
+`
+
+export const S3top = styled.div `
+    width: 100vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40% 0 40%;
 `
 
 export const QWrapper = css `
