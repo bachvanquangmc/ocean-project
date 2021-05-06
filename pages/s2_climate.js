@@ -6,11 +6,10 @@ import Header from '../comps/Header'
 import NextButton from '../comps/NextButton'
 
 const Body = styled.div`
-    min-height: 300px;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     background: linear-gradient(180deg, rgba(40,19,17,1) 0%, rgba(25,149,201,1) 60%, rgba(11,78,138,1) 100%);
 `

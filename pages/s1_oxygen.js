@@ -3,6 +3,7 @@ import PageLayout from '../comps/PageLayout'
 import HiddenMenu from '../comps/HiddenMenu'
 import Header from '../comps/Header'
 import {useRouter} from 'next/router'
+import NextButton from '../comps/NextButton'
 
 
 const Body = styled.div`
@@ -19,8 +20,10 @@ export default function S1_oxygen() {
     const router = useRouter();
   return<Body>
             <Header></Header>
-            <Body onClick={()=>router.push('/s1_habitat')}>
+            
             <PageLayout FTitle="Oxygen Production" STitle="Where does it come from?" FDiscription="Over 50% of the oxygen we breathe is generated from the ocean." SDiscription="The main contributer of oxygen produced within the ocean are phytoplankton, which are microscopic plants floating around ocean. Similar to land plants, they photosynthesize. During which, they absorb carbon dioxide and release oxygen." BackgroundImg="" ImgSource="/phytoplankton.svg"></PageLayout>
-            </Body>
+            <div onClick={()=>router.push('/s1_habitat')}>
+            <NextButton></NextButton>
+            </div>
     </Body>
 }

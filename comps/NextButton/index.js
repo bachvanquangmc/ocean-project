@@ -5,7 +5,7 @@ const ButtonCont = styled.div`
     flex-direction: column;
     align-items:center;
     position:relative;
-    bottom:150px;
+
 
 `
 const ButtonImg = styled.img`
