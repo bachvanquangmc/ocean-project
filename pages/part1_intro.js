@@ -3,6 +3,7 @@ import Header from '../comps/Header'
 import {useRouter} from 'next/router'
 import IntroTitleUI from '../comps/IntroTitleUI';
 import IntroTextUI from '../comps/IntroTextUI';
+import NextButton from '../comps/NextButton'
 
 const TextCont = styled.div`
 `;
