@@ -26,7 +26,7 @@ export default function Protect () {
     const router = useRouter();
     return <ImpCont >
                 <Header></Header>
-                <ImpCont onClick={()=>router.push('/s3_quiz1')}>  
+                <ImpCont onClick={()=>router.push('/s3_info')}>  
                         <TextCont  >
                             <IntroTitleUI Title = "Protection"/>
                             <IntroTextUI Body = "What we can do to protect the ocean." />

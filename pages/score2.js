@@ -1,39 +1,63 @@
-import React from 'react'
-import HiddenMenu from '../comps/HiddenMenu'
+import React, {useState} from 'react'
+import Header from '../comps/Header'
 import S3text from '../comps/S3textUI'
 import InputBtn from '../comps/InputBtn'
-import {S3WraperS, S3Content} from '../styles/style'
+import QizAnswer from '../comps/QizAnswers'
+import {quiz2} from '../data/quiztext'
+import SimBtn from '../comps/SimBtn'
+import QuizIndeUI from '../comps/QuizIndeUI'
+import {S3WraperS, S3Content, S3top} from '../styles/style'
 
 export default function S3page({
-    score = 0,
-    score2 = 0,
-    score3 = 0,
-    finalScore = 0
+    score2 = 0
 }) {
 
     if(process.browser)
     {
-        score = sessionStorage.getItem('quiz1') * 100
-    
-        score2 = sessionStorage.getItem('quiz2') * 100
-    
-        score3 = sessionStorage.getItem('quiz3') * 100
-    
-        finalScore = score + score2 + score3
+        score2 = parseInt(sessionStorage.getItem('quiz2') / sessionStorage.getItem('sum2') * 100) 
+
+        if(process.browser)
+        {
+            sessionStorage.setItem('score2', score2)
+        }
     }
 
+    const [answer, setAnswer] = useState(false)
+
+    const answerHandle =()=>
+    {
+        setAnswer(!answer)
+    }
 
     return<S3WraperS>
-                <HiddenMenu />
+            <Header />
+            <S3top>
+                <QuizIndeUI  />
+                <QuizIndeUI text='Quiz2' displayColor = {1}/>
+                <QuizIndeUI text='Quiz3' />
+            </S3top>
             <S3Content>
-                <S3text titleColor='yellow' textTitle='Score for this Quiz' textBody={score2 +' / 600'}></S3text>
+                <S3text titleColor='yellow' textTitle='Score for this Quiz' textBody={score2 +' / 100'}></S3text>
             </S3Content>
-            <S3Content>
-                <S3text titleColor='yellow' textTitle='Your Final Score ' textBody={finalScore + ' / 1900'}></S3text>
+            <S3Content onClick={answerHandle}>
+                <SimBtn text={ answer? 'Close Answer' : 'Check Answers' } bgColor='#98A633' />
             </S3Content>
+            { answer? <S3Content>
+                {quiz2.map((v,i)=>{
+                    return <QizAnswer 
+                        key = {i} 
+                        qizIndex = {v.qizIndex}
+                        isTrue = { v.isTrue}
+                        qizTitle = {v.qizTitle}
+                        qizText = {v.qizText}
+                        imgSrc = {v.imgSrc}
+                        callBack ={process}
+                    />
+                })}
+            </S3Content> : <div/>}
             <S3Content>
-                <InputBtn IptRouter={'/s3_quiz3'} text='Next Quiz'/>
-                <InputBtn IptRouter={'/s3_quiz2'} text='Redo This Quiz'/>
+                <InputBtn IptRouter={'/quiz3'} text='Next Quiz'/>
+                <InputBtn IptRouter={'/quiz2'} text='Redo This Quiz'/>
             </S3Content>
 
         </S3WraperS>

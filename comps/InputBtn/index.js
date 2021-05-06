@@ -4,21 +4,21 @@ import {useRouter} from 'next/router'
 
 
 const IpBtnWrap = styled.button `
-    height: 70px;
-    width: 90vw;
+    height: 50px;
+    width: 50vw;
     margin: 15px 0 15px 0;
-    background: rgba(255, 255, 255, 0.2);
+    background: ${props=>props.bgColor};
     border: none;
-    border-radius: 10px;
-    color: yellow;
-    font-size: 1.2em;
+    border-radius: 30px;
+    color: #FFF;
+    font-size: 1em;
 `
-
 
 const InputBtn = ({
     value = 'Submit',
     IptRouter = '/', 
-    text = 'Submit'
+    text = 'Submit',
+    bgColor = '#20BEAD'
 }) =>
 {
     const iptRoute = useRouter()
@@ -28,7 +28,7 @@ const InputBtn = ({
         iptRoute.push(IptRouter)
     }
 
-    return<IpBtnWrap onClick={submitHandle} value={value}>
+    return<IpBtnWrap onClick={submitHandle} value={value} bgColor={bgColor}>
         {text}
     </IpBtnWrap>
 
