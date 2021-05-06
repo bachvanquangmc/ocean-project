@@ -6,14 +6,13 @@ import {useRouter} from 'next/router'
 
 const Body = styled.div`
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     background: rgb(170,215,255);
-    background-image: url(/ocean_background_2.svg);
-    background-repeat: no-repeat;
+    background: url(/ocean_background_2.svg) no-repeat center center fixed;
     background-size: cover;
 `
 
@@ -22,7 +21,7 @@ export default function S1_habitat() {
   return<Body>
             <Header></Header>
             <Body onClick={()=>router.push('/s1_food')}>
-            <PageLayout FTitle="Home" STitle="91%" FDiscription="Is what the ocean is to an abundance of sealife. With around 230,000 species recorded so far." SDiscription="Of species within the ocean are still awaiting classification." BackgroundImg="" ImgSource=""></PageLayout>
+            <PageLayout FTitle="Marine Habitats" STitle="What else is there to find?" FDiscription="The ocean is home to an abundance of sealife. With around 230,000 species recorded so far." SDiscription="There are many things we've yet to discover about the ocean. For example, 91% of species within it are still awaiting classification." BackgroundImg="" ImgSource=""></PageLayout>
             </Body>
     </Body>
 }

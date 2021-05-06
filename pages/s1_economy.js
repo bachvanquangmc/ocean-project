@@ -1,15 +1,14 @@
 import styled from 'styled-components'
 import PageLayout from '../comps/PageLayout'
-import HiddenMenu from '../comps/HiddenMenu'
 import Header from '../comps/Header'
 import {useRouter} from 'next/router'
 
 const Body = styled.div`
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     background: rgb(4,191,173);
     background: linear-gradient(180deg, rgba(4,191,173,1) 0%, rgba(25,149,201,1) 60%, rgba(11,78,138,1) 100%);
@@ -20,7 +19,7 @@ export default function S1_economy() {
   return<Body>
             <Header></Header>
             <Body onClick={()=>router.push('/part2_intro')}>
-            <PageLayout FTitle="Economy" STitle="Over 3.0 Billion" FDiscription="" SDiscription=" of people depend on the marine and coastal biodiversity to sustain their livelihoods." BackgroundImg="" ImgSource="/shipyard.svg"></PageLayout>
+            <PageLayout FTitle="Growing Economy" STitle="How does the ocean contribute?" FDiscription="Over 3 billion people depend on marine and coastal biodiversity to sustain their livelihoods." SDiscription="There are many things relating to the ocean that affects our economy. The most obvious natural recource is the fishery, in that it provides us with seafood. The ocean also contributes with energy generation, raw minerals through subsea mining, pearl production, medicinal material from marine animals and plants, transportation of supplies, travel routes and recreation/tourism, and much more." BackgroundImg="" ImgSource="/shipyard.svg"></PageLayout>
             </Body>
     </Body>
 }
