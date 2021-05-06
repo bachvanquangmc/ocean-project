@@ -24,7 +24,7 @@ export default function S1_food() {
   return <Body>
       <Header></Header>
         
-            <PageLayout FTitle="Overfishing" STitle="1/3" FDiscription="" SDiscription="of global fish stocks are overfished" BackgroundImg="" ImgSource="" BackgroundImg=""></PageLayout>
+            <PageLayout FTitle="Overfishing" STitle="In 2048" FDiscription="90% of worldwide stocks of large fish are already gone" SDiscription="Scientists believe that if fisheries are not kept in check, the ocean will run out of seafood" BackgroundImg="" ImgSource="" BackgroundImg=""></PageLayout>
             <div onClick={()=>router.push('/s2_ship')}>
               <NextButton></NextButton>
            </div>

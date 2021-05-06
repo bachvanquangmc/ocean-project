@@ -17,7 +17,7 @@ export default function S2_mpa() {
     const router = useRouter();
   return<Body>
             <Header></Header>
-            <PageLayout FTitle="Only 2%" STitle="MPA" FDiscription="of global oceans are included in strongly protected marine parks" SDiscription="Marine Protected Areas(MPA) are areas of ocean set aside for long-term conservation aims" BackgroundImg="" ImgSource="/mpa.svg"></PageLayout>
+            <PageLayout FTitle="Only 2%" STitle="MPA" FDiscription="Of global oceans are included in strongly protected marine parks" SDiscription="Marine Protected Areas(MPA) are areas of ocean set aside for long-term conservation aims" BackgroundImg="" ImgSource="/mpa.svg"></PageLayout>
             <div onClick={()=>router.push('/part3_intro')}>
                 <NextButton></NextButton>
             </div>

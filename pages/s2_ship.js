@@ -22,7 +22,7 @@ export default function S1_food() {
   return <Body>
       <Header></Header>
         
-            <PageLayout FTitle="" STitle="Waste Pollution from Ships" FDiscription="" SDiscription="Apart from other pollutants such as oil and gas, the waste and garbage generated on board ships poses a significant threat to the marine ecosystem" BackgroundImg="" ImgSource="/fishing_boat1.svg"></PageLayout>
+            <PageLayout FTitle="1 Cruise Ship = 1,000,000 Cars" STitle="Waste Pollution from Ships" FDiscription="Cruise ships, generate copious waste — including sewage, hazardous chemical waste, garbage, CO2 and oil; most of which is discharged into the oceans." SDiscription="Apart from other pollutants such as oil and gas, the waste and garbage generated on board ships poses a significant threat to the marine ecosystem" BackgroundImg="" ImgSource="/fishing_boat1.svg"></PageLayout>
             <div onClick={()=>router.push('/s2_mpa')}>
               <NextButton></NextButton>
             </div>
