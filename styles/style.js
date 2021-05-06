@@ -3,7 +3,7 @@ import styled, {css} from 'styled-components'
 export const S3Wraper = styled.div`
     width: 100vw;
     height: 100%;
-    padding-top: 60px;
+    padding-top: 65px;
     display: flex;
     flex-direction: column;
     background: linear-gradient(180deg, rgba(25, 149, 201, 0.79) 0%, #1995C9 41.15%, #116DA5 100%);
@@ -12,8 +12,8 @@ export const S3Wraper = styled.div`
 
 export const S3WraperS = styled.div`
     width: 100vw;
-    height: 100vh;
-    padding-top: 50px;
+    min-height: 100vh;
+    padding-top: 65px;
     display: flex;
     flex-direction: column;
     background: linear-gradient(180deg, rgba(25, 149, 201, 0.79) 0%, #1995C9 41.15%, #116DA5 100%);
@@ -49,17 +49,24 @@ export const QWrapper = css `
     color: #FFF;
 `
 export const QizImgW = styled.div `
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:center;
     margin: 0 10px;
 `
+export const QizState = styled.div `
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+`
+
 
 export const QizImg = styled.img `
     // height:100px;
-    width: 100px;
+    width: 60px;
     display: flex;
     align-items: center;
     justify-content:center;

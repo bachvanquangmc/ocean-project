@@ -8,7 +8,8 @@ const QizUI = ({
     imgSrc = 'car.svg',
     qizTitle = 'Question 1',
     qizText = 'This is first question',
-    qizIndex = '1',
+    isTrue = null,
+    selectScore = 0,
     borderSize = '0', 
     callBack =()=>{}
 }) =>
@@ -18,10 +19,17 @@ const QizUI = ({
     const borderHandle = () =>
     {
         setBorder(!border)
-        {qizIndex}
-        callBack(border, qizIndex)
+        if(border === false && isTrue === true)
+        {
+            selectScore = 1
+        }
+        else if (border === true && isTrue === true )
+        {
+            selectScore = -1
+        }
+        
+        callBack(selectScore)
     }
-    
     
     return <QizWrapper onClick={borderHandle} borderSize={border ? '2' : '0'} >
         <QizImgW>

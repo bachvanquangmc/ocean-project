@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../comps/Header'
 import S3text from '../comps/S3textUI'
-import QizUIr from '../comps/QizUIr'
+import QizUI from '../comps/QizUI'
 import InputBtn from '../comps/InputBtn'
 import {S3Wraper, S3Content, S3top} from '../styles/style'
 import {quiz3} from '../data/quiztext'
@@ -44,7 +44,7 @@ export default function S3page({
             </S3Content>
             <S3Content>
                 {quiz3.map((v,i)=>{
-                    return <QizUIr 
+                    return <QizUI 
                         key = {i} 
                         qizIndex = {v.qizIndex}
                         isTrue = { v.isTrue}

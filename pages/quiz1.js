@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../comps/Header'
 import S3text from '../comps/S3textUI'
-import QizUIr from '../comps/QizUIr'
+import QizUI from '../comps/QizUI'
 import InputBtn from '../comps/InputBtn'
 import {S3Wraper, S3Content, S3top} from '../styles/style'
 import {quiz1} from '../data/quiztext'
@@ -15,13 +15,10 @@ export default function S3page({
     {
         quiz1Right = quiz1Right + parseInt(value)
 
-
         if(process.browser)
         {
             sessionStorage.setItem('quiz1', quiz1Right)
-
         }  
-
     }
     
     var sum = 0
@@ -30,8 +27,7 @@ export default function S3page({
         sum += s
         if(process.browser)
         {
-            sessionStorage.clear()
-            
+            sessionStorage.clear()       
             sessionStorage.setItem('sum1', sum)
         }
     })
@@ -48,7 +44,7 @@ export default function S3page({
             </S3Content>
             <S3Content>
                 {quiz1.map((v,i)=>{
-                    return <QizUIr 
+                    return <QizUI 
                         key = {i} 
                         qizIndex = {v.qizIndex}
                         isTrue = { v.isTrue}
