@@ -15,7 +15,7 @@ const LayoutDiv = styled.div`
 `;
 
 const LayoutContent = styled.div`
-    padding: 200px 0 50px 0;
+    padding: 100px 0 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,6 +31,14 @@ const ImgSrc = styled.img`
 const BigText = styled.div`
     text-align: center;
     font-size: 36px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    position: relative;
+    margin:10px;
+`;
+
+const MedText = styled.div`
+    text-align: center;
+    font-size: 26px;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     position: relative;
     margin:10px;
@@ -68,7 +76,7 @@ const PageLayout = ({
           </TextContainer>
           <ImgSrc src={ImgSource}></ImgSrc>
           <TextContainer>
-          <BigText>{STitle}</BigText>
+          <MedText>{STitle}</MedText>
           <SmallText>{SDiscription}</SmallText>
           </TextContainer>
         </LayoutContent>
