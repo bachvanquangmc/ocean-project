@@ -14,13 +14,15 @@ const ButtonImg = styled.img`
 const Text = styled.h4`
     color:#FFFFFF;
     margin-top:0px;
+    position: relative;
+    top: 60px;
 `;
 const NextButton = (
 
 ) =>{
 
     return<ButtonCont>
-        <Text>Click here to proceed</Text>
+        <Text>Next Page</Text>
         <ButtonImg src='down.svg' ></ButtonImg>
     </ButtonCont>
 }
