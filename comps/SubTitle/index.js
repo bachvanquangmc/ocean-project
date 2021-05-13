@@ -4,8 +4,8 @@ import { SmallCardWrap, SubTitleWrap, SubTextWrap,  LeftDiv, RightDiv, SubTitleH
 
 const SubTitle =({
     textDisplay = 'none',
-    subTile = 'Subtile',
-    smallText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+    subTitle = 'Subtile',
+    smallText = 'Subtext'
 })=>
 {
     const [displayText, setDisplaytext] = useState(false)
@@ -18,7 +18,7 @@ const SubTitle =({
     return <SmallCardWrap>
         <SubTitleWrap>
             <LeftDiv>
-                <SubTitleH4>{subTile}</SubTitleH4>
+                <SubTitleH4>{subTitle}</SubTitleH4>
             </LeftDiv>
             <RightDiv onClick={displayHandle}>
                 <p>{ displayText ? 'Less <<' : '>> More'}</p>

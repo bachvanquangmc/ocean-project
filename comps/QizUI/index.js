@@ -9,6 +9,8 @@ const QizUI = ({
     qizTitle = 'Question 1',
     qizText = 'This is first question',
     isTrue = null,
+    qizIndex = null,
+    qizId = null,
     selectScore = 0,
     borderSize = '0', 
     callBack =()=>{}
@@ -27,9 +29,18 @@ const QizUI = ({
         {
             selectScore = -1
         }
+        // else if (border === false && isTrue === false)
+        // {
+        //     selectScore = -1
+        // }
+        // else if (border === true && isTrue === false)
+        // {
+        //     selectScore = 1
+        // }
+        console.log(qizId)
         
         callBack(selectScore)
-    }
+    } 
     
     return <QizWrapper onClick={borderHandle} borderSize={border ? '2' : '0'} >
         <QizImgW>

@@ -31,6 +31,7 @@ export const CardTitleWrap = styled.div `
 export const CardBodyWrap = styled.div `
     height: ${props=>props.cardHeight};
     overflow: ${props=>props.bodyOverFlow};
+    
 `
 
 export const CardTextPara = styled.p `
@@ -52,5 +53,5 @@ export const RightDiv = styled.div `
 
 export const CardTitleH3 = styled.h3 `
     color: #000;
-    padding-left: 30px;
+    padding: 0 30px;
 ` 

@@ -27,10 +27,12 @@ display: ${props=>props.textDisplay};
 
 export const LeftDiv = styled.div `
 width: 70%;
+padding: 0 10px;
 `
 
 export const RightDiv = styled.div `
 width: 30%;
+padding: 0 10px;
 p{
     color: #FFF;
 }
