@@ -13,18 +13,30 @@ export default function S3page({
 
     const process =(value)=>
     {
+        console.log(value)
         quiz1Right = quiz1Right + parseInt(value)
 
         if(process.browser)
         {
-            sessionStorage.setItem('quiz1', quiz1Right)
+            if(quiz1Right < 0 )
+            {
+                quiz1Right = 0
+                sessionStorage.setItem('quiz1', quiz1Right)
+            }
+            else
+            {
+                sessionStorage.setItem('quiz1', quiz1Right)
+            }
         }  
     }
     
     var sum = 0
-    var newarry = quiz1.map((v,i)=>{ return v.qizIndex})
+    var newarry = quiz1.map((v,i)=>{ 
+        return v.qizIndex
+    })
     newarry.forEach((s)=>{
-        sum += s
+        sum += 1
+       
         if(process.browser)
         {
             sessionStorage.clear()       
@@ -52,6 +64,7 @@ export default function S3page({
                         qizText = {v.qizText}
                         imgSrc = {v.imgSrc}
                         callBack ={process}
+                        qizId = {i}
                     />
                 })}
                 

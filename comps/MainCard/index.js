@@ -5,7 +5,17 @@ import { MainCardWrap, ImgWrap, CardTitleWrap, CardBodyWrap, CardTextPara, LeftD
 
 const MainCard =({
     CardTitle = 'Title Here',
-    CardPara = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    CardPara = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    CardSubTitle1 = 'Sub Title One',
+    CardSubText1 = 'Sub Text One',
+    CardSubTitle2 = 'Sub Title One',
+    CardSubText2 = 'Sub Text One',
+    CardSubTitle3 = 'Sub Title One',
+    CardSubText3 = 'Sub Text One',
+    CardSubTitle4 = 'Sub Title One',
+    CardSubText4 = 'Sub Text One',
+    CardSubTitle5 = 'Sub Title One',
+    CardSubText5 = 'Sub Text One'
 })=>
 {
     const [overFlow, setOverFlow] = useState(false)
@@ -27,9 +37,12 @@ const MainCard =({
         </CardTitleWrap>
         <CardBodyWrap bodyOverFlow={ overFlow ? 'visible' : 'hidden'} cardHeight={ overFlow ? 'auto' : '60px'}>
             <CardTextPara>{CardPara}</CardTextPara>
-            <SubTitle/>
-            <SubTitle/>
-            <SubTitle/>
+            <SubTitle subTitle={CardSubTitle1} smallText={CardSubText1} />
+            <SubTitle subTitle={CardSubTitle2} smallText={CardSubText2} />
+            <SubTitle subTitle={CardSubTitle3} smallText={CardSubText3} />
+            <SubTitle subTitle={CardSubTitle4} smallText={CardSubText4} />
+            <SubTitle subTitle={CardSubTitle5} smallText={CardSubText5} />
+            
         </CardBodyWrap>
     </MainCardWrap>
 }

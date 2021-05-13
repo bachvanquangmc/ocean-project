@@ -2,7 +2,7 @@ import styled, {css} from 'styled-components'
 
 export const S3Wraper = styled.div`
     width: 100vw;
-    height: 100%;
+    min-height: 100%;
     padding-top: 65px;
     display: flex;
     flex-direction: column;
