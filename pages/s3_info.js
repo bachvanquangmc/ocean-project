@@ -1,5 +1,5 @@
 import React from 'react'
-import {S3Wraper, S3Content} from '../styles/style'
+import {S3WraperS, S3Content} from '../styles/style'
 import MainCard from '../comps/MainCard'
 import Header from '../comps/Header'
 import InputBtn from '../comps/InputBtn'
