@@ -96,10 +96,10 @@ const AboutUI = ({
         </TextContainer>
         <Title>Developed By:</Title>
         <Names>
-            <p>Warren</p>
-            <p>Maharlika</p>
-            <p>Blen</p>
-            <p>Quang</p>
+            <p>Quang B.</p>
+            <p>Warren C.</p>
+            <p>Maharlika C.</p>
+            <p>Blen H.</p>
         </Names>
         <ButtonContainer>        
         <BtnLink onClick={()=>router.push("/categories")}>
