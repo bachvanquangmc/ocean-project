@@ -3,6 +3,7 @@ import PageLayout from '../comps/PageLayout'
 import HiddenMenu from '../comps/HiddenMenu'
 import Header from '../comps/Header'
 import {useRouter} from 'next/router'
+import NextButton from '../comps/NextButton'
 
 const Body = styled.div`
     width: 100vw;
@@ -20,8 +21,9 @@ export default function S1_habitat() {
     const router = useRouter();
   return<Body>
             <Header></Header>
-            <Body onClick={()=>router.push('/s1_food')}>
-            <PageLayout FTitle="Marine Habitats" STitle="What else is there to find?" FDiscription="The ocean is home to an abundance of sealife. With around 230,000 species recorded so far." SDiscription="There are many things we've yet to discover about the ocean. For example, 91% of species within it are still awaiting classification." BackgroundImg="" ImgSource=""></PageLayout>
-            </Body>
+            <PageLayout FTitle="Marine Habitats" STitle="What else is there to find?" FDiscription="The ocean is home to an abundance of sealife. With around 230,000 species recorded so far." SDiscription="There are many things we've yet to discover about the ocean. For example, 91% of species within it are still awaiting classification." BackgroundImg="" ImgSource="/species_pie_chart.svg"></PageLayout>
+            <div onClick={()=>router.push('/s1_food')}>
+                <NextButton></NextButton>
+            </div>
     </Body>
 }
