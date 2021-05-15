@@ -10,11 +10,17 @@ import QuizIndeUI from '../comps/QuizIndeUI'
 export default function S3page({
     quiz1Right = 0
 }) {
-
-    const process =(value)=>
+    const process =(x, value)=>
     {
-        console.log(value)
-        quiz1Right = quiz1Right + parseInt(value)
+
+        if(value == quiz1[x].isTrue)
+        {
+            quiz1Right = quiz1Right + 1
+        }
+        else
+        {
+            quiz1Right = quiz1Right - 1
+        }
 
         if(process.browser)
         {
@@ -32,18 +38,19 @@ export default function S3page({
     
     var sum = 0
     var newarry = quiz1.map((v,i)=>{ 
-        return v.qizIndex
-    })
-    newarry.forEach((s)=>{
-        sum += 1
-       
-        if(process.browser)
-        {
-            sessionStorage.clear()       
-            sessionStorage.setItem('sum1', sum)
-        }
+        return v.isTrue
     })
 
+    sum = newarry.length
+        
+    if(process.browser)
+    {
+        sessionStorage.clear()
+        sessionStorage.setItem('quiz1', 0)
+        sessionStorage.setItem('score1', 0)       
+        sessionStorage.setItem('sum1', sum)
+    }
+ 
     return<S3Wraper>
             <Header />
             <S3top>
@@ -52,7 +59,7 @@ export default function S3page({
                 <QuizIndeUI text='Quiz3' />
             </S3top>
             <S3Content>
-                <S3text titleColor='yellow' textTitle='Quiz One: What can I do to help prevent climate change?' textBody='Please click on the ways you think it will work'></S3text>
+                <S3text titleColor='yellow' textTitle='Quiz One: What can we do to help prevent climate change?' textBody='Please read the questions clearfully and choose the answer.'></S3text>
             </S3Content>
             <S3Content>
                 {quiz1.map((v,i)=>{
@@ -66,10 +73,8 @@ export default function S3page({
                         callBack ={process}
                         qizId = {i}
                     />
-                })}
-                
+                })}               
                 <InputBtn IptRouter={'/score1'}/>
             </S3Content>
-
         </S3Wraper>
 }

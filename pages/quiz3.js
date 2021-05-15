@@ -10,27 +10,44 @@ import QuizIndeUI from '../comps/QuizIndeUI'
 export default function S3page({
     quiz3Right = 0
 }) {
-
-    const process =(value)=>
+    const process =(x, value)=>
     {
-        quiz3Right = quiz3Right + parseInt(value)
+        if(value == quiz3[x].isTrue)
+        {
+            quiz3Right = quiz3Right + 1
+        }
+        else
+        {
+            quiz3Right = quiz3Right - 1
+        }
 
         if(process.browser)
         {
-            sessionStorage.setItem('quiz3', quiz3Right)
+            if(quiz3Right < 0 )
+            {
+                quiz3Right = 0
+                sessionStorage.setItem('quiz3', quiz3Right)
+            }
+            else
+            {
+                sessionStorage.setItem('quiz3', quiz3Right)
+            }
         }  
-
     }
     
     var sum = 0
-    var newarry = quiz3.map((v,i)=>{ return v.qizIndex})
-    newarry.forEach((s)=>{
-        sum += s
-        if(process.browser)
-        {
-            sessionStorage.setItem('sum3', sum)
-        }
+    var newarry = quiz3.map((v,i)=>{ 
+        return v.isTrue
     })
+
+    sum = newarry.length
+    
+    if(process.browser)
+    {   
+        sessionStorage.setItem('quiz3', 0)
+        sessionStorage.setItem('score3', 0)   
+        sessionStorage.setItem('sum3', sum)
+    }
 
     return<S3Wraper>
             <Header />
@@ -52,11 +69,10 @@ export default function S3page({
                         qizText = {v.qizText}
                         imgSrc = {v.imgSrc}
                         callBack ={process}
+                        qizId = {i}
                     />
-                })}
-                
+                })}    
                 <InputBtn IptRouter={'/score3'}/>
             </S3Content>
-
         </S3Wraper>
 }

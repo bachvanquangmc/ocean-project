@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
-import {QizImg, QizInfo, QizTitle, QizText, QWrapper, QizImgW} from '../../styles/style'
+import {QizImg, QizInfo, QizTitle, QizText, QWrapper, QizImgW, QizState, QizSelectT, QizSelectF} from '../../styles/style'
 
 const QizWrapper = styled.div `${QWrapper}`
+
 
 const QizUI = ({
     imgSrc = 'car.svg',
@@ -11,38 +12,41 @@ const QizUI = ({
     isTrue = null,
     qizIndex = null,
     qizId = null,
-    selectScore = 0,
-    borderSize = '0', 
+    selectScore = null,
+    borderSizeT = '0',
+    borderSizeF = '0',  
     callBack =()=>{}
 }) =>
 {
-    const [border, setBorder] = useState(false)
+    const [borderT, setBorderT] = useState(false)
     
-    const borderHandle = () =>
+    const borderHandleT = () =>
     {
-        setBorder(!border)
-        if(border === false && isTrue === true)
+        setBorderT(true)
+        setBorderF(false)
+        selectScore = true        
+
+        if(borderT==false)
         {
-            selectScore = 1
+            callBack(qizId, selectScore)
         }
-        else if (border === true && isTrue === true )
-        {
-            selectScore = -1
-        }
-        // else if (border === false && isTrue === false)
-        // {
-        //     selectScore = -1
-        // }
-        // else if (border === true && isTrue === false)
-        // {
-        //     selectScore = 1
-        // }
-        console.log(qizId)
-        
-        callBack(selectScore)
     } 
     
-    return <QizWrapper onClick={borderHandle} borderSize={border ? '2' : '0'} >
+    const [borderF, setBorderF] = useState(false)
+    
+    const borderHandleF = () =>
+    {
+        setBorderF(true)
+        setBorderT(false)
+        selectScore = false
+
+        if(borderF==false)
+        {
+            callBack(qizId, selectScore)
+        }
+    } 
+
+    return <QizWrapper >
         <QizImgW>
             <QizImg src={imgSrc} />
         </QizImgW>
@@ -50,6 +54,14 @@ const QizUI = ({
             <QizTitle>{qizTitle}</QizTitle>
             <QizText>{qizText}</QizText>
         </QizInfo>
+        <QizState>
+            <QizSelectT onClick={borderHandleT} borderSizeT={borderT ? '2' : '0'}>
+                True
+            </QizSelectT>
+            <QizSelectF onClick={borderHandleF} borderSizeF={borderF ? '2' : '0'}>
+                False
+            </QizSelectF>
+        </QizState>
     </QizWrapper>
 }
 

@@ -6,6 +6,7 @@ import { MainCardWrap, ImgWrap, CardTitleWrap, CardBodyWrap, CardTextPara, LeftD
 const MainCard =({
     CardTitle = 'Title Here',
     CardPara = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    CardImg = '/thinkgreen.jpg',
     CardSubTitle1 = 'Sub Title One',
     CardSubText1 = 'Sub Text One',
     CardSubTitle2 = 'Sub Title One',
@@ -26,7 +27,7 @@ const MainCard =({
     }
 
     return <MainCardWrap>
-        <ImgWrap />
+        <ImgWrap CardImg={CardImg}/>
         <CardTitleWrap >
             <LeftDiv>
                 <CardTitleH3>{CardTitle}</CardTitleH3>

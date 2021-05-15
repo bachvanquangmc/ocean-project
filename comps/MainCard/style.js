@@ -12,9 +12,9 @@ export const MainCardWrap = styled.div `
 `
 
 export const ImgWrap = styled.div `
-    height: 200px;
+    height: 300px;
     background: grey;
-    background-image: url(/243.jpg);
+    background-image: url(${props=>props.CardImg});
     background-postion: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,7 +22,6 @@ export const ImgWrap = styled.div `
 `
 
 export const CardTitleWrap = styled.div `
-    height: 50px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -35,17 +34,17 @@ export const CardBodyWrap = styled.div `
 `
 
 export const CardTextPara = styled.p `
-    padding: 10px 30px 10px 30px;
+    padding: 10px 20px 10px 20px;
     border-top: solid 1px white;
     line-height: 22px;
     margin: 0;
 `
 export const LeftDiv = styled.div `
-    width: 70%;
+    width: 75%;
 `
 
 export const RightDiv = styled.div `
-    width: 30%;
+    width: 25%;
     p{
         color: #FFF;
     }
@@ -53,5 +52,5 @@ export const RightDiv = styled.div `
 
 export const CardTitleH3 = styled.h3 `
     color: #000;
-    padding: 0 30px;
+    padding: 0 20px;
 ` 
