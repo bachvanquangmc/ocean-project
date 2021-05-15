@@ -41,7 +41,7 @@ export const QWrapper = css `
     width: 90vw;
     margin-top: 15px;
     padding: 0 10px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(11, 78, 138, 0.7);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
