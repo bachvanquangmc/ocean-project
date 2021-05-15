@@ -36,7 +36,7 @@ const MainCard =({
                 <p>{overFlow ? 'Less <<' : '>> More'}</p>
             </RightDiv>
         </CardTitleWrap>
-        <CardBodyWrap bodyOverFlow={ overFlow ? 'visible' : 'hidden'} cardHeight={ overFlow ? 'auto' : '60px'}>
+        <CardBodyWrap bodyOverFlow={ overFlow ? 'visible' : 'hidden'} cardHeight={ overFlow ? 'auto' : '58px'}>
             <CardTextPara>{CardPara}</CardTextPara>
             <SubTitle subTitle={CardSubTitle1} smallText={CardSubText1} />
             <SubTitle subTitle={CardSubTitle2} smallText={CardSubText2} />

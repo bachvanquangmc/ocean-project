@@ -30,7 +30,6 @@ export const CardTitleWrap = styled.div `
 export const CardBodyWrap = styled.div `
     height: ${props=>props.cardHeight};
     overflow: ${props=>props.bodyOverFlow};
-    
 `
 
 export const CardTextPara = styled.p `
