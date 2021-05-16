@@ -57,7 +57,7 @@ export default function S3page({
                 <QuizIndeUI text='Quiz3' displayColor = {1}/>
             </S3top>
             <S3Content>
-                <S3text titleColor='yellow' textTitle='Quiz One: What can I do to help prevent overfishing?' textBody='Please read the questions clearfully and choose the answer.'></S3text>
+                <S3text titleColor='yellow' textTitle='Quiz Three: What can I do to help prevent overfishing?' textBody='Please read the questions carefully and choose the answer.'></S3text>
             </S3Content>
             <S3Content>
                 {quiz3.map((v,i)=>{

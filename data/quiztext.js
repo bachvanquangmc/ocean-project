@@ -25,14 +25,14 @@ export const quiz1 =
         isTrue: true,
         qizIndex: 1,
         qizTitle: 'Travel Green',
-        qizText: 'Walking or biking to the local stores or taking publick transport could reduce you carbon footprint. Getting an electric car and reduce emissions',
+        qizText: 'Walking or biking to the local stores or taking public transport could reduce your carbon footprint. Getting an electric car and reduce emissions',
         imgSrc: 'car.svg'
     },
     {
         isTrue: false,
         qizIndex: 0,
-        qizTitle: 'Climate Change is fake new',
-        qizText: 'There is no evidence showing climage is changing.',
+        qizTitle: 'Climate Change is fake news',
+        qizText: 'There is no evidence showing climate is changing.',
         imgSrc: 'fake_news.png'
     },
     {
@@ -86,7 +86,7 @@ export const quiz2 =
         isTrue: true,
         qizIndex: 1,
         qizTitle: 'Green Food Storage',
-        qizText: 'Use glass containers for food Storage, or use a resuable containers for storing foods, shopping in bulk',
+        qizText: 'Use glass containers for food Storage, or use a resuable container for storing foods, shopping in bulk',
         imgSrc: 'jar.svg'
     },
     {
@@ -132,21 +132,21 @@ export const quiz3 =
         isTrue: true,
         qizIndex: 1,
         qizTitle: 'No more trawling',
-        qizText: 'Banning the trawling will save more life than we think it will.',
+        qizText: 'Banning the trawling will save more lives than we think it will.',
         imgSrc: 'halibut.svg'
     },
     {
         isTrue: true,
         qizIndex: 1,
-        qizTitle: 'Eat small fish, or reduce fish cosumtion',
-        qizText: 'It’s better to eat less of the big fish and more of their prey. Reduce seafood comsumtion to help prevent overfishing',
+        qizTitle: 'Eat small fish, or reduce fish consumption',
+        qizText: 'It’s better to eat less of the big fish and more of their prey. Reduce seafood consumption to help prevent overfishing',
         imgSrc: 'salmon1.svg'
     },
     {
         isTrue: true,
         qizIndex: 1,
         qizTitle: 'Raise the awareness',
-        qizText: 'Spread the words fro prevent overfishing. Joining the environmental campaign',
+        qizText: 'Spread the words for prevent overfishing. Joining the environmental campaign',
         imgSrc: 'sardine.svg'
     },
     {
