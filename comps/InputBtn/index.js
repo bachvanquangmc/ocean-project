@@ -4,7 +4,7 @@ import {useRouter} from 'next/router'
 
 
 const IpBtnWrap = styled.button `
-    height: 50px;
+    height: 40px;
     width: 50vw;
     margin: 15px 0 15px 0;
     background: ${props=>props.bgColor};

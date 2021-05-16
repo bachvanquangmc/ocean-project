@@ -11,27 +11,44 @@ export default function S3page({
     quiz2Right = 0
 }) {
 
-    const process =(value)=>
+    const process =(x, value)=>
     {
-        quiz2Right = quiz2Right + parseInt(value)
-        
+        if(value == quiz2[x].isTrue)
+        {
+            quiz2Right = quiz2Right + 1
+        }
+        else
+        {
+            quiz2Right = quiz2Right - 1
+        }
 
         if(process.browser)
         {
-            sessionStorage.setItem('quiz2', quiz2Right)
+            if(quiz2Right < 0 )
+            {
+                quiz2Right = 0
+                sessionStorage.setItem('quiz2', quiz2Right)
+            }
+            else
+            {
+                sessionStorage.setItem('quiz2', quiz2Right)
+            }
         }  
-
     }
     
     var sum = 0
-    var newarry = quiz2.map((v,i)=>{ return v.qizIndex})
-    newarry.forEach((s)=>{
-        sum += s
-        if(process.browser)
-        {
-            sessionStorage.setItem('sum2', sum)
-        }
+    var newarry = quiz2.map((v,i)=>{ 
+        return v.isTrue
     })
+
+    sum = newarry.length
+    
+    if(process.browser)
+    {      
+        sessionStorage.setItem('quiz2', 0)
+        sessionStorage.setItem('score2', 0)
+        sessionStorage.setItem('sum2', sum)
+    }
 
     return<S3Wraper>
             <Header />
@@ -41,7 +58,7 @@ export default function S3page({
                 <QuizIndeUI text='Quiz3' />
             </S3top>
             <S3Content>
-                <S3text titleColor='yellow' textTitle='Quiz One: What can I do to help prevent climate change?' textBody='Please click on the ways you think it will work'></S3text>
+                <S3text titleColor='yellow' textTitle='Quiz One: What can we do to help prevent plastic pollution?' textBody='Please read the questions clearfully and choose the answer.'></S3text>
             </S3Content>
             <S3Content>
                 {quiz2.map((v,i)=>{
@@ -53,11 +70,10 @@ export default function S3page({
                         qizText = {v.qizText}
                         imgSrc = {v.imgSrc}
                         callBack ={process}
+                        qizId = {i}
                     />
                 })}
-                
                 <InputBtn IptRouter={'/score2'}/>
             </S3Content>
-
         </S3Wraper>
 }

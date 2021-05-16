@@ -23,11 +23,12 @@ const HiddenMenu = ({
             <BackBtn />
         </MenuTop>
         <MenuWraper display={menu ? 'block' : 'none'} >
-            <MenuBar mRouter='/categories' barText='Home'></MenuBar>
-            <MenuBar mRouter='/part1_intro' barText='Importance'></MenuBar>
-            <MenuBar mRouter='/part2_intro' barText='Threats'></MenuBar>
-            <MenuBar mRouter='/part3_intro' barText='Protection'></MenuBar>
-            <MenuBar mRouter='/about' barText='About'></MenuBar>
+            <MenuBar mRouter='/categories' barText='Home'/>
+            <MenuBar mRouter='/part1_intro' barText='Importance' />
+            <MenuBar mRouter='/part2_intro' barText='Threats' />
+            <MenuBar mRouter='/part3_intro' barText='Protection'/>
+            <MenuBar mRouter='/quiz1' barText='Quiz'/>
+            <MenuBar mRouter='/about' barText='About' />
         </MenuWraper>
     </Wrapper>
 } 
