@@ -96,6 +96,7 @@ export const QizImg = styled.img `
 `
 
 export const QizInfo = styled.div `
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,6 +108,7 @@ export const QizInfo = styled.div `
 
 export const QizTitle = styled.h3 `
     width: 100%;
+    text-align: center;
     color: yellow;
     margin: 10px;
 `

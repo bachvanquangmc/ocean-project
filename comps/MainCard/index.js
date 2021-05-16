@@ -16,7 +16,9 @@ const MainCard =({
     CardSubTitle4 = 'Sub Title One',
     CardSubText4 = 'Sub Text One',
     CardSubTitle5 = 'Sub Title One',
-    CardSubText5 = 'Sub Text One'
+    CardSubText5 = 'Sub Text One',
+    CardSubTitle6 = '',
+    CardSubText6 = ''
 })=>
 {
     const [overFlow, setOverFlow] = useState(false)
@@ -43,7 +45,7 @@ const MainCard =({
             <SubTitle subTitle={CardSubTitle3} smallText={CardSubText3} />
             <SubTitle subTitle={CardSubTitle4} smallText={CardSubText4} />
             <SubTitle subTitle={CardSubTitle5} smallText={CardSubText5} />
-            
+            <SubTitle subTitle={CardSubTitle6} smallText={CardSubText6} />
         </CardBodyWrap>
     </MainCardWrap>
 }

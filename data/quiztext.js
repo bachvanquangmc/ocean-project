@@ -29,6 +29,13 @@ export const quiz1 =
         imgSrc: 'car.svg'
     },
     {
+        isTrue: false,
+        qizIndex: 0,
+        qizTitle: 'Climate Change is fake new',
+        qizText: 'There is no evidence showing climage is changing.',
+        imgSrc: 'fake_news.png'
+    },
+    {
         isTrue: true,
         qizIndex: 1,
         qizTitle: 'Stand Up and Get Involved',
@@ -36,11 +43,18 @@ export const quiz1 =
         imgSrc: 'tree.svg'
     },
     {
-        isTrue: false,
-        qizIndex: 0,
+        isTrue: true,
+        qizIndex: 1,
         qizTitle: 'Clean Energy',
         qizText: 'Use renewable energy by installing solar panels and generating your own energy. Use solar-pwered objects',
         imgSrc: 'sun.svg'
+    },
+    {
+        isTrue: false,
+        qizIndex: 0,
+        qizTitle: 'We can not do much',
+        qizText: 'Government should take care of it.',
+        imgSrc: 'stop.png'
     }
 
 ]
@@ -85,6 +99,13 @@ export const quiz2 =
     {
         isTrue: false,
         qizIndex: 0,
+        qizTitle: 'Plastic is not harmful',
+        qizText: 'If we keep plastic properly it is not harmful.',
+        imgSrc: 'bottle.png'
+    },
+    {
+        isTrue: true,
+        qizIndex: 1,
         qizTitle: 'Give Up Gum',
         qizText: 'Gum is made of a synthetic rubber, aka plastic',
         imgSrc: 'gum.svg'
@@ -96,50 +117,50 @@ export const quiz3 =
     {
         isTrue: true,
         qizIndex: 1,
-        qizTitle: 'Albacore Tuna',
-        qizText: 'B.C. & north Atlantic pole or troll caught.',
+        qizTitle: 'Limit the fish catch',
+        qizText: 'Support national and local rules for regulate fishing, limit the fish catch',
         imgSrc: 'tuna.svg'
     },
     {
         isTrue: true,
         qizIndex: 1,
-        qizTitle: 'Shellfish',
-        qizText: 'Clams, mussels, oysters, scallops nationwide beach or suspension farmed.',
+        qizTitle: 'Create more marine protected areas',
+        qizText: 'more no-catch zones to allow fish populations and their ecosystems',
         imgSrc: 'shell.svg'
     },
     {
         isTrue: true,
         qizIndex: 1,
-        qizTitle: 'Pacific Halibut',
-        qizText: 'B.C. bottom longline or handline caught.',
+        qizTitle: 'No more trawling',
+        qizText: 'Banning the trawling will save more life than we think it will.',
         imgSrc: 'halibut.svg'
     },
     {
         isTrue: true,
         qizIndex: 1,
-        qizTitle: 'Salmon',
-        qizText: 'Chinook, chum, coho, pink, sockey. B.C. seine net, gill or troll caught.',
+        qizTitle: 'Eat small fish, or reduce fish cosumtion',
+        qizText: 'It’s better to eat less of the big fish and more of their prey. Reduce seafood comsumtion to help prevent overfishing',
         imgSrc: 'salmon1.svg'
     },
     {
         isTrue: true,
         qizIndex: 1,
-        qizTitle: 'Pacific Sardine',
-        qizText: 'B.C. purse seine.',
+        qizTitle: 'Raise the awareness',
+        qizText: 'Spread the words fro prevent overfishing. Joining the environmental campaign',
         imgSrc: 'sardine.svg'
     },
     {
         isTrue: true,
         qizIndex: 1,
-        qizTitle: 'Shrimp',
-        qizText: 'Spot prawns, sidestripe, humpback, pink. B.C. trap caught.',
+        qizTitle: 'Ban the illegal fishing',
+        qizText: 'Illegal fishing practice done by the irresponsible group only leave chaos to the ocean life.',
         imgSrc: 'shrimp.svg'
     },
     {
         isTrue: false,
         qizIndex: 0,
-        qizTitle: 'Dungeness Crab',
-        qizText: 'B.C. trap caught',
+        qizTitle: 'Seafood will never end ',
+        qizText: 'Do not worry about it, just eat as many as possible',
         imgSrc: 'crab.svg'
     }
 ]

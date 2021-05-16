@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const SmallCardWrap = styled.div `
 margin-bottom: 5px;
 width: 100%;
+display: ${props=>props.subDisplay}
 `
 
 export const SubTitleWrap = styled.div `
