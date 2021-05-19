@@ -59,7 +59,7 @@ export default function S3page({
                 <QuizIndeUI text='Quiz3' />
             </S3top>
             <S3Content>
-                <S3text titleColor='yellow' textTitle='Quiz One: What can we do to help prevent climate change?' textBody='Please read the questions clearfully and choose the answer.'></S3text>
+                <S3text titleColor='yellow' textTitle='Quiz One: What can we do to help prevent climate change?' textBody='Please read the questions carefully and choose the answer.'></S3text>
             </S3Content>
             <S3Content>
                 {quiz1.map((v,i)=>{

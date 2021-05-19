@@ -16,5 +16,9 @@ const AboutPage = styled.div`
 export default function HomeBody() {
   return<AboutPage>
             <About/>
+            <p>Some images:</p>
+            <a href="http://www.freepik.com">Freepik</a>
+            <a href="http://www.vecteezy.com">Vecteezy</a>
+            <a href="http://pixabay.com">Pixabay</a>
     </AboutPage>
 }

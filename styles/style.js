@@ -57,7 +57,7 @@ export const QizImgW = styled.div `
 `
 export const QizState = styled.div `
     width: 100%;
-    height: 60px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -102,8 +102,9 @@ export const QizInfo = styled.div `
     align-items: center;
     justify-content:center;
     margin: 0 10px 10px 10px;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
+    // border-top: solid 1px;
+    border-bottom: solid grey 1px;
+    padding-bottom: 15px;
 `
 
 export const QizTitle = styled.h3 `
