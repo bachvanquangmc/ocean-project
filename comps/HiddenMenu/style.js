@@ -12,7 +12,7 @@ export const MenuWraper = styled.div `
     height: 100vh;
     padding: 80px 0 80px 0;
     background-color: #0B4E8A;
-    opacity: 0.9;
+    opacity: 0.98;
     display: ${props => props.display};
     position: absolute;
     z-index: 9999;

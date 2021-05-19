@@ -11,7 +11,7 @@ const CatDiv = styled.div`
     justify-content:center;
     align-items:center;
     color:#FFF;
-    background: rgba(11, 78, 138, 0.8);
+    background: rgba(11, 78, 138, 0.95);
     border-radius: 10px;
 `;
 

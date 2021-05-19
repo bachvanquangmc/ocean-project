@@ -4,6 +4,7 @@ import MenuBar from '../MenuBar'
 import BackBtn from '../BackBtn'
 import {useState} from 'react'
 import {Wrapper, MenuWraper, MenuTop, MenuIconDiv} from './style'
+import {MenuData} from '../../data/hiddenMenu'
 
 const HiddenMenu = ({
     display = 'none'
@@ -23,12 +24,13 @@ const HiddenMenu = ({
             <BackBtn />
         </MenuTop>
         <MenuWraper display={menu ? 'block' : 'none'} >
-            <MenuBar mRouter='/categories' barText='Home'/>
-            <MenuBar mRouter='/part1_intro' barText='Importance' />
-            <MenuBar mRouter='/part2_intro' barText='Threats' />
-            <MenuBar mRouter='/part3_intro' barText='Protection'/>
-            <MenuBar mRouter='/quiz1' barText='Quiz'/>
-            <MenuBar mRouter='/about' barText='About' />
+            {MenuData.map((v,i)=>{
+                return <MenuBar
+                key={i}
+                mRouter={v.mRouter}
+                barText={v.barText}
+                />
+            })}
         </MenuWraper>
     </Wrapper>
 } 
